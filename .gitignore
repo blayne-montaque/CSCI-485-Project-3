@@ -1,0 +1,45 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local secrets; blank examples may be committed
+.env
+.env.*
+!*.example
+.streamlit/secrets.toml
+
+# Downloaded caches and generated model weights/checkpoints
+.cache/
+.huggingface/
+hf_cache/
+checkpoints/
+checkpoint-*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Editor, Windows, and temporary files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+*.tmp
+*.temp
+*.swp
+*.swo
+*.log
+~$*
+
+# Keep data/, artifacts/, CSVs, evaluation JSON, and PNG figures trackable.
