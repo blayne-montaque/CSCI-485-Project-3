@@ -1,0 +1,24 @@
+{
+  "ran_at_utc": "2026-09-26T21:39:32.676162Z",
+  "tool": "Groq chat completions",
+  "model": "qwen/qwen3.8-27b",
+  "configuration": {
+    "temperature": 0,
+    "response_format": "json_object",
+    "retries_after_initial_attempt": 2
+  },
+  "attempted": 141,
+  "api_attempts": 141,
+  "successfully_pre_labeled": 141,
+  "failed_or_unclassified": 0,
+  "proposed_label_distribution": {
+    "reasoned_explanation": 37,
+    "actionable_advice": 51,
+    "bare_claim": 43,
+    "reaction": 10
+  },
+  "ambiguity_count": 0,
+  "failures": [],
+  "human_reviewed_rows_modified": 0,
+  "final_labels_modified": 0
+}
