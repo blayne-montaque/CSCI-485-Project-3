@@ -1,0 +1,50 @@
+{
+  "retrieval_timestamp_utc": "2026-09-26T20:44:43.007139Z",
+  "method": "Arctic Shift public Reddit archive API (/api/comments/search and /api/posts/ids)",
+  "community": "r/3Dprinting",
+  "author_data_saved": false,
+  "retrieved_before_filtering": 900,
+  "excluded_by_deterministic_filters": 364,
+  "filter_breakdown": {
+    "bot_or_moderator_boilerplate": 179,
+    "clear_question_only": 31,
+    "duplicate_comment_id": 66,
+    "duplicate_normalized_text": 4,
+    "per_thread_cap": 84
+  },
+  "duplicates_removed": 70,
+  "retained_candidates": 400,
+  "eligible_before_target_cap": 536,
+  "not_selected_due_to_target_cap": 136,
+  "unique_source_threads": 190,
+  "topic_query_retrieval_counts": {
+    "cad_design": 100,
+    "first_layer": 100,
+    "materials_filament": 100,
+    "print_quality": 100,
+    "printer_setup": 100,
+    "slicer_settings": 100,
+    "strength_orientation": 100,
+    "tpu": 100,
+    "troubleshooting": 100
+  },
+  "retained_by_topic_query": {
+    "cad_design": 55,
+    "first_layer": 56,
+    "materials_filament": 56,
+    "print_quality": 56,
+    "printer_setup": 56,
+    "slicer_settings": 51,
+    "strength_orientation": 8,
+    "tpu": 56,
+    "troubleshooting": 6
+  },
+  "threads_with_title": 190,
+  "api_errors": [],
+  "limits": {
+    "per_topic_limit": 100,
+    "per_thread_cap": 12,
+    "max_candidates": 400,
+    "request_delay_seconds": 0.75
+  }
+}
