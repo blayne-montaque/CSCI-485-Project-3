@@ -1,0 +1,28 @@
+{
+  "retrieval_timestamp_utc": "2026-09-27T02:21:04.251291Z",
+  "method": "Wayback Machine public snapshots of public Reddit comment permalinks after Arctic Shift archive API returned server errors and Reddit JSON blocked access",
+  "community": "r/3Dprinting",
+  "author_data_saved": false,
+  "supplemental_candidates": 60,
+  "unique_source_threads": 8,
+  "per_thread_counts": {
+    "leje7r": 1,
+    "mxh1tl": 1,
+    "mybcbk": 14,
+    "mywp3v": 2,
+    "mzosm1": 12,
+    "n8jpen": 3,
+    "nhp6b5": 15,
+    "rs4al4": 12
+  },
+  "source_topic": "supplemental_reaction_context",
+  "deduplicated_against_existing_raw_and_working": true,
+  "duplicate_ids_or_normalized_text_in_supplement": false,
+  "preexisting_reviewed_rows": 251,
+  "preexisting_reviewed_rows_fingerprint_sha256": "961327a0e812bc232bebaf00de6d76119e54e872d4fa8424739efd6bf54acc00",
+  "new_rows_initialized": {
+    "human_reviewed": false,
+    "final_label": "",
+    "excluded": false
+  }
+}
