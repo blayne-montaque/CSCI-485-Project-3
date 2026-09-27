@@ -1,0 +1,35 @@
+{
+  "dataset_checkpoint": "653c28b2496779ecdf6dfb6078b70986a9007a63",
+  "dataset_file": "data/labeled_posts.csv",
+  "assignment_file": "data/split_assignments.csv",
+  "seed": 42,
+  "method": "two-stage sklearn StratifiedShuffleSplit; 43 test then 42 validation from the remainder",
+  "locked_test_set": true,
+  "total_examples": 282,
+  "split_counts": {
+    "test": 43,
+    "train": 197,
+    "validation": 42
+  },
+  "per_class_counts": {
+    "train": {
+      "reasoned_explanation": 63,
+      "actionable_advice": 34,
+      "bare_claim": 58,
+      "reaction": 42
+    },
+    "validation": {
+      "reasoned_explanation": 13,
+      "actionable_advice": 8,
+      "bare_claim": 12,
+      "reaction": 9
+    },
+    "test": {
+      "reasoned_explanation": 13,
+      "actionable_advice": 8,
+      "bare_claim": 13,
+      "reaction": 9
+    }
+  },
+  "assignment_sha256": "284ed355bcd52d0b4af30c1d1856db6d00e0791dde45de097fc6ec0e8f1f9d98"
+}

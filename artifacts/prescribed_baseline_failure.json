@@ -1,0 +1,9 @@
+{
+  "attempted_at_utc": "2026-09-27T22:36:23.282002Z",
+  "requested_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+  "error_type": "NotFoundError",
+  "http_status": 404,
+  "sanitized_error_message": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+  "substitute_model_used": false,
+  "baseline_metrics_created": false
+}

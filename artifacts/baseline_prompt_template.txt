@@ -1,0 +1,20 @@
+Classify the following single public r/3Dprinting comment into exactly one label.
+
+Valid labels:
+reasoned_explanation
+actionable_advice
+bare_claim
+reaction
+
+Definitions and decision rules:
+- reasoned_explanation: a comment that meaningfully explains a conclusion, diagnosis, recommendation, or viewpoint using causal reasoning, observable evidence, a technical principle, an explicit tradeoff, or relevant experience that explains why the conclusion follows. Merely naming a problem or adding a very short descriptive phrase is not enough; the comment must provide meaningful support.
+- actionable_advice: a comment that gives a concrete recommendation, procedure, setting change, resource, or next step a reader could perform, but does not provide substantial reasoning for why that action should work.
+- bare_claim: a comment that states an answer, diagnosis, opinion, preference, or conclusion without substantial supporting reasoning and without sufficiently concrete actionable guidance.
+- reaction: a comment whose primary function is social or emotional rather than a technical contribution, including humor, agreement, appreciation, encouragement, surprise, dismissal, and similar responses that do not materially advance the technical discussion.
+
+If advice has little or no meaningful rationale, use actionable_advice. If a comment gives a concrete action the reader can perform, use actionable_advice; if it only supplies an answer, diagnosis, conclusion, preference, or opinion without a concrete next step, use bare_claim. Personal experience qualifies as reasoned_explanation only when it explains why a conclusion or recommendation follows.
+
+Output only one exact label name, with no punctuation, explanation, JSON, or markdown.
+
+Comment:
+{comment_text}
