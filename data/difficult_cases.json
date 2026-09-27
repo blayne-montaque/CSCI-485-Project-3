@@ -1,4 +1,44 @@
 {
-  "genuine_student_flagged_difficult_cases": 0,
-  "cases": []
+  "initial_annotation_student_flagged_difficult_cases": 0,
+  "post_annotation_boundary_audit": {
+    "potential_boundary_cases_surfaced": 10,
+    "genuine_difficult_cases_selected": 3,
+    "label_corrections": 2,
+    "retained_original_label": 1
+  },
+  "cases": [
+    {
+      "comment_id": "pc78qi3",
+      "text": "Filament is cheap. Make it like 20 walls.",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1wl3o4h/tips_wanted_making_this_object_solid_bandsaw_vise/pc78qi3/",
+      "original_label": "reasoned_explanation",
+      "plausible_competing_label": "actionable_advice",
+      "final_audit_decision": "actionable_advice",
+      "label_changed": true,
+      "decision_rationale": "The recommendation to use approximately 20 walls is concrete advice; the cost justification does not meaningfully explain why 20 walls is technically appropriate.",
+      "review_stage": "post_annotation_boundary_audit"
+    },
+    {
+      "comment_id": "pc23bto",
+      "text": "I calibrate the paper I use with a feeler gauge, if that helps.",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1wq3o4k/paper_vs_feeler_gauge_for_bed_leveling_what_do/pc23bto/",
+      "original_label": "actionable_advice",
+      "plausible_competing_label": "bare_claim",
+      "final_audit_decision": "actionable_advice",
+      "label_changed": false,
+      "decision_rationale": "Though phrased as personal practice, it pragmatically offers a specific procedure without substantial explanation of why it works.",
+      "review_stage": "post_annotation_boundary_audit"
+    },
+    {
+      "comment_id": "pc7vzug",
+      "text": "that is very unnecessary lol. i also print technical filaments (just about everything you can think of) and i've never had to do this. never had a clog on a bambu machine. you should get checked for OCD fasho",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1wqrl4p/wip_hotend_station/pc7vzug/",
+      "original_label": "reaction",
+      "plausible_competing_label": "bare_claim",
+      "final_audit_decision": "bare_claim",
+      "label_changed": true,
+      "decision_rationale": "Despite its dismissive tone, its substantive contribution is an experience-backed claim that the procedure is unnecessary, without a technical mechanism or concrete alternative action.",
+      "review_stage": "post_annotation_boundary_audit"
+    }
+  ]
 }

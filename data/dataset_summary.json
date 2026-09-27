@@ -1,30 +1,53 @@
 {
   "total_final_examples": 282,
   "class_distribution": {
-    "reasoned_explanation": 90,
-    "actionable_advice": 49,
-    "bare_claim": 82,
-    "reaction": 61
+    "reasoned_explanation": 89,
+    "actionable_advice": 50,
+    "bare_claim": 83,
+    "reaction": 60
   },
   "class_percentages": {
-    "reasoned_explanation": 0.3191489361702128,
-    "actionable_advice": 0.17375886524822695,
-    "bare_claim": 0.2907801418439716,
-    "reaction": 0.21631205673758866
+    "reasoned_explanation": 0.31560283687943264,
+    "actionable_advice": 0.1773049645390071,
+    "bare_claim": 0.29432624113475175,
+    "reaction": 0.2127659574468085
   },
   "human_reviewed_rows": 282,
   "accepted_examples": 282,
   "excluded_examples": 0,
   "unreviewed_rows": 178,
+  "initial_annotation_review": {
+    "accepted_examples": 282,
+    "class_distribution_before_boundary_audit": {
+      "reasoned_explanation": 90,
+      "actionable_advice": 49,
+      "bare_claim": 82,
+      "reaction": 61
+    },
+    "ai_proposals_initially_accepted_count": 282,
+    "ai_proposals_initially_accepted_rate": 1.0,
+    "student_flagged_difficult_cases": 0
+  },
+  "post_annotation_boundary_audit": {
+    "potential_boundary_cases_surfaced": 10,
+    "genuine_difficult_cases_selected": 3,
+    "label_corrections": 2,
+    "retained_original_label_cases": 1,
+    "changed_comment_ids": [
+      "pc78qi3",
+      "pc7vzug"
+    ],
+    "review_stage": "post_annotation_boundary_audit"
+  },
   "annotation_assistance": {
     "accepted_examples_with_valid_proposed_label": 282,
-    "overall_agreement_count": 282,
-    "overall_agreement_rate": 1.0,
-    "human_correction_count": 0,
+    "final_agreement_count": 280,
+    "final_agreement_rate": 0.9929078014184397,
+    "final_human_correction_count": 2,
     "confusion_proposed_to_final": {
       "reasoned_explanation": {
-        "reasoned_explanation": 90,
-        "actionable_advice": 0,
+        "reasoned_explanation": 89,
+        "actionable_advice": 1,
         "bare_claim": 0,
         "reaction": 0
       },
@@ -43,15 +66,15 @@
       "reaction": {
         "reasoned_explanation": 0,
         "actionable_advice": 0,
-        "bare_claim": 0,
-        "reaction": 61
+        "bare_claim": 1,
+        "reaction": 60
       }
     },
     "agreement_by_proposed_label": {
       "reasoned_explanation": {
         "accepted_examples": 90,
-        "agreement_count": 90,
-        "agreement_rate": 1.0
+        "agreement_count": 89,
+        "agreement_rate": 0.9888888888888889
       },
       "actionable_advice": {
         "accepted_examples": 49,
@@ -65,14 +88,16 @@
       },
       "reaction": {
         "accepted_examples": 61,
-        "agreement_count": 61,
-        "agreement_rate": 1.0
+        "agreement_count": 60,
+        "agreement_rate": 0.9836065573770492
       }
     },
     "ai_flagged_ambiguous_accepted_examples": 13,
-    "student_flagged_difficult_accepted_examples": 0,
+    "initial_annotation_student_flagged_difficult_examples": 0,
+    "post_annotation_boundary_audit_genuine_difficult_cases": 3,
     "per_example_annotation_model_provenance_available": false,
-    "annotation_model_provenance_note": "The working CSV does not retain a model identifier per row; run-level summaries cannot reliably attribute each accepted example to a model."
+    "annotation_model_provenance_note": "The working CSV does not retain a model identifier per row; run-level summaries cannot reliably attribute each accepted example to a model.",
+    "interpretation_note": "These AI-versus-human comparisons document annotation assistance and are not inter-annotator reliability."
   },
   "validation": {
     "total_rows": 282,
@@ -83,7 +108,13 @@
     "provenance_coverage": 282,
     "provenance_coverage_rate": 1.0,
     "no_class_exceeds_70_percent": true,
-    "smallest_class_percentage": 0.17375886524822695
+    "smallest_class_percentage": 0.1773049645390071,
+    "only_approved_final_labels_changed_from_prior_checkpoint": true,
+    "changed_comment_ids": [
+      "pc78qi3",
+      "pc7vzug"
+    ],
+    "retained_audit_case_comment_id": "pc23bto"
   },
   "difficult_cases_file": "data/difficult_cases.json",
   "labeled_dataset_file": "data/labeled_posts.csv"
