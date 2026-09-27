@@ -6,7 +6,11 @@ Experiment code loads this mapping and checks protected inputs against that
 checkpoint. It never invokes the split generator. Stable IDs come from the
 reviewed working rows, whose text/label projection must exactly match
 `data/labeled_posts.csv`. The final dataset, labels, taxonomy, saved prompt,
-split, and prescribed-model failure evidence remain unchanged.
+split, and prescribed-model failure evidence remain unchanged. The original plan
+is preserved verbatim; a later stretch section was committed before stretch work.
+Validation checks that extension against planning checkpoint
+`c11e86058d9a42693b282231b067da6937fe04b1` while retaining the original planning hash
+in the historical experiment identity.
 
 The fixed label/ID order for every metric, matrix, and probability row is:
 `reasoned_explanation` (0), `actionable_advice` (1), `bare_claim` (2), `reaction` (3).

@@ -13,6 +13,7 @@ from lock_dataset_split import VALID_LABELS, load_finalized_rows, read_csv, vali
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / 'artifacts'
 LOCK_CHECKPOINT = '24b9451b0bf3f00f697ff61436721795dbf45d51'
+STRETCH_PLAN_CHECKPOINT = 'c11e86058d9a42693b282231b067da6937fe04b1'
 LABELS = list(VALID_LABELS)
 LABEL2ID = {label: i for i, label in enumerate(LABELS)}
 PROTECTED = ['data/labeled_posts.csv', 'data/annotation_working.csv',
@@ -47,6 +48,12 @@ def load_locked_data():
     for name in PROTECTED:
         committed = subprocess.check_output(['git', 'show', f'{LOCK_CHECKPOINT}:{name}'], cwd=ROOT)
         current = (ROOT / name).read_bytes()
+        if name == 'planning.md':
+            extended = subprocess.check_output(
+                ['git', 'show', f'{STRETCH_PLAN_CHECKPOINT}:planning.md'], cwd=ROOT)
+            if not extended.replace(b'\r\n', b'\n').startswith(committed.replace(b'\r\n', b'\n')):
+                raise ValueError('Stretch plan changed the original specification')
+            committed = extended
         if current.replace(b'\r\n', b'\n') != committed.replace(b'\r\n', b'\n'):
             raise ValueError(f'Authoritative checkpoint changed: {name}')
     rows = load_finalized_rows(ROOT / 'data/annotation_working.csv', ROOT / 'data/labeled_posts.csv')
@@ -60,9 +67,13 @@ def load_locked_data():
 
 
 def identities(splits):
+    # The historical core experiment references its original planning snapshot.
+    hashes = {name: sha256(ROOT / name) for name in PROTECTED}
+    hashes['planning.md'] = hashlib.sha256(subprocess.check_output(
+        ['git', 'show', f'{LOCK_CHECKPOINT}:planning.md'], cwd=ROOT)).hexdigest()
     return {
         'lock_checkpoint': LOCK_CHECKPOINT,
-        'input_sha256': {name: sha256(ROOT / name) for name in PROTECTED},
+        'input_sha256': hashes,
         'split_ids': {name: [r['comment_id'] for r in rows] for name, rows in splits.items()},
         'label_order': LABELS,
         'label2id': LABEL2ID,

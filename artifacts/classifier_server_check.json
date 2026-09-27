@@ -1,0 +1,6 @@
+{
+  "url": "http://127.0.0.1:8502/_stcore/health",
+  "http_status": 200,
+  "body": "ok",
+  "purpose": "Observed local Streamlit launch health check; interaction covered by AppTest"
+}

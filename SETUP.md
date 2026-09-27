@@ -1,7 +1,8 @@
 # Local environment setup
 
-This checkpoint contains environment configuration only. Project planning and
-implementation are deferred.
+Environment setup for the completed local TakeMeter project. See README.md for
+results and classifier launch instructions, and EXPERIMENTS.md for the pinned
+model revision, locked split, and guarded reproduction commands.
 
 ## Windows / NVIDIA installation
 
@@ -39,11 +40,14 @@ interpreters; use the explicit path to avoid selecting the wrong Python.
 
 ## Local configuration
 
-`.env.example` contains only an empty `GROQ_API_KEY` placeholder. Add a private
-`.env` later when API access is needed; no real `.env` or API key was created.
-Virtual environments, secrets, caches, and generated model weights are ignored.
-`data/` and `artifacts/` contain only `.gitkeep` placeholders. Required CSV, JSON,
-PNG, source, and Markdown deliverables remain eligible for Git tracking.
+`.env.example` contains only an empty `GROQ_API_KEY` placeholder. A private ignored
+`.env` is required only for Groq annotation/baseline requests. The local classifier
+does not use Groq or API credentials. Virtual environments, secrets, caches, and
+generated model weights are ignored. Reviewed data and observed evaluation/analysis
+artifacts are tracked. The selected model/tokenizer remain in the ignored local
+`checkpoints/takemeter-distilbert/` directory; restore that directory or follow the
+separate reproduction instructions if it is missing. No downloadable fine-tuned
+checkpoint or public deployment is claimed.
 
 ## Verification
 

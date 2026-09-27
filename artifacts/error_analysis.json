@@ -1,0 +1,633 @@
+{
+  "count": 43,
+  "total_finetuned_errors": 29,
+  "prediction_distribution": {
+    "baseline": {
+      "reasoned_explanation": 6,
+      "actionable_advice": 15,
+      "bare_claim": 12,
+      "reaction": 10
+    },
+    "finetuned": {
+      "reasoned_explanation": 38,
+      "actionable_advice": 0,
+      "bare_claim": 5,
+      "reaction": 0
+    }
+  },
+  "errors_by_true_label": {
+    "reaction": 9,
+    "bare_claim": 12,
+    "actionable_advice": 8
+  },
+  "errors_by_predicted_label": {
+    "reasoned_explanation": 25,
+    "bare_claim": 4
+  },
+  "confusion_pairs": [
+    {
+      "true_label": "bare_claim",
+      "predicted_label": "reasoned_explanation",
+      "count": 12
+    },
+    {
+      "true_label": "actionable_advice",
+      "predicted_label": "reasoned_explanation",
+      "count": 8
+    },
+    {
+      "true_label": "reaction",
+      "predicted_label": "reasoned_explanation",
+      "count": 5
+    },
+    {
+      "true_label": "reaction",
+      "predicted_label": "bare_claim",
+      "count": 4
+    }
+  ],
+  "confidence_overall": {
+    "count": 43,
+    "mean": 0.3869779893132143,
+    "median": 0.39249804615974426,
+    "min": 0.2731325030326843,
+    "max": 0.5024609565734863
+  },
+  "by_correctness": {
+    "true": {
+      "words": {
+        "count": 14,
+        "mean": 79.0,
+        "median": 60.5,
+        "min": 26.0,
+        "max": 249.0
+      },
+      "characters": {
+        "count": 14,
+        "mean": 435.07142857142856,
+        "median": 324.0,
+        "min": 147.0,
+        "max": 1439.0
+      },
+      "confidence": {
+        "count": 14,
+        "mean": 0.43582398125103544,
+        "median": 0.43997737765312195,
+        "min": 0.3265131115913391,
+        "max": 0.5024609565734863
+      }
+    },
+    "false": {
+      "words": {
+        "count": 29,
+        "mean": 45.44827586206897,
+        "median": 30.0,
+        "min": 4.0,
+        "max": 194.0
+      },
+      "characters": {
+        "count": 29,
+        "mean": 253.24137931034483,
+        "median": 170.0,
+        "min": 21.0,
+        "max": 1007.0
+      },
+      "confidence": {
+        "count": 29,
+        "mean": 0.3633971656190938,
+        "median": 0.3510860800743103,
+        "min": 0.2731325030326843,
+        "max": 0.4963296949863434
+      }
+    }
+  },
+  "test_length_by_true_class": {
+    "reasoned_explanation": {
+      "words": {
+        "count": 13,
+        "mean": 80.46153846153847,
+        "median": 61.0,
+        "min": 26.0,
+        "max": 249.0
+      },
+      "characters": {
+        "count": 13,
+        "mean": 444.46153846153845,
+        "median": 335.0,
+        "min": 147.0,
+        "max": 1439.0
+      }
+    },
+    "actionable_advice": {
+      "words": {
+        "count": 8,
+        "mean": 70.0,
+        "median": 51.5,
+        "min": 26.0,
+        "max": 194.0
+      },
+      "characters": {
+        "count": 8,
+        "mean": 383.75,
+        "median": 267.5,
+        "min": 138.0,
+        "max": 1007.0
+      }
+    },
+    "bare_claim": {
+      "words": {
+        "count": 13,
+        "mean": 44.84615384615385,
+        "median": 30.0,
+        "min": 6.0,
+        "max": 167.0
+      },
+      "characters": {
+        "count": 13,
+        "mean": 248.3846153846154,
+        "median": 182.0,
+        "min": 36.0,
+        "max": 848.0
+      }
+    },
+    "reaction": {
+      "words": {
+        "count": 9,
+        "mean": 26.11111111111111,
+        "median": 22.0,
+        "min": 4.0,
+        "max": 81.0
+      },
+      "characters": {
+        "count": 9,
+        "mean": 150.88888888888889,
+        "median": 111.0,
+        "min": 21.0,
+        "max": 583.0
+      }
+    }
+  },
+  "dataset_words_by_split_and_class": {
+    "train": {
+      "reasoned_explanation": {
+        "count": 63,
+        "mean": 114.28571428571429,
+        "median": 73.0,
+        "min": 17.0,
+        "max": 1312.0
+      },
+      "actionable_advice": {
+        "count": 34,
+        "mean": 37.64705882352941,
+        "median": 27.5,
+        "min": 6.0,
+        "max": 104.0
+      },
+      "bare_claim": {
+        "count": 58,
+        "mean": 51.758620689655174,
+        "median": 34.0,
+        "min": 5.0,
+        "max": 264.0
+      },
+      "reaction": {
+        "count": 42,
+        "mean": 40.214285714285715,
+        "median": 13.5,
+        "min": 1.0,
+        "max": 367.0
+      }
+    },
+    "validation": {
+      "reasoned_explanation": {
+        "count": 13,
+        "mean": 65.3076923076923,
+        "median": 55.0,
+        "min": 15.0,
+        "max": 226.0
+      },
+      "actionable_advice": {
+        "count": 8,
+        "mean": 48.25,
+        "median": 45.0,
+        "min": 13.0,
+        "max": 102.0
+      },
+      "bare_claim": {
+        "count": 12,
+        "mean": 69.66666666666667,
+        "median": 64.0,
+        "min": 3.0,
+        "max": 170.0
+      },
+      "reaction": {
+        "count": 9,
+        "mean": 16.666666666666668,
+        "median": 8.0,
+        "min": 3.0,
+        "max": 61.0
+      }
+    },
+    "test": {
+      "reasoned_explanation": {
+        "count": 13,
+        "mean": 80.46153846153847,
+        "median": 61.0,
+        "min": 26.0,
+        "max": 249.0
+      },
+      "actionable_advice": {
+        "count": 8,
+        "mean": 70.0,
+        "median": 51.5,
+        "min": 26.0,
+        "max": 194.0
+      },
+      "bare_claim": {
+        "count": 13,
+        "mean": 44.84615384615385,
+        "median": 30.0,
+        "min": 6.0,
+        "max": 167.0
+      },
+      "reaction": {
+        "count": 9,
+        "mean": 26.11111111111111,
+        "median": 22.0,
+        "min": 4.0,
+        "max": 81.0
+      }
+    }
+  },
+  "highest_confidence_errors": [
+    {
+      "comment_id": "pbzqybs",
+      "true_label": "actionable_advice",
+      "predicted_label": "reasoned_explanation",
+      "confidence": 0.4963296949863434,
+      "probability_reasoned_explanation": "0.4963296949863434",
+      "probability_actionable_advice": "0.16372030973434448",
+      "probability_bare_claim": "0.2107560783624649",
+      "probability_reaction": "0.1291939616203308",
+      "probabilities": {
+        "reasoned_explanation": 0.4963296949863434,
+        "actionable_advice": 0.16372030973434448,
+        "bare_claim": 0.2107560783624649,
+        "reaction": 0.1291939616203308
+      },
+      "text": "There are many things that could be wrong all the way from damp filament to issue with an axis to a slicer issue. You need to go through a complete recalibration and setup and prep your filament and then make adjustments based on visual study of what is actually going wrong during the print.",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1wpxrfw/how_do_i_fix_this/pbzqybs/",
+      "word_count": 54,
+      "character_count": 292,
+      "correct": false,
+      "baseline_prediction": "actionable_advice",
+      "baseline_correct": true
+    },
+    {
+      "comment_id": "pbz923l",
+      "true_label": "actionable_advice",
+      "predicted_label": "reasoned_explanation",
+      "confidence": 0.4654392600059509,
+      "probability_reasoned_explanation": "0.4654392600059509",
+      "probability_actionable_advice": "0.17477668821811676",
+      "probability_bare_claim": "0.2187991738319397",
+      "probability_reaction": "0.140984907746315",
+      "probabilities": {
+        "reasoned_explanation": 0.4654392600059509,
+        "actionable_advice": 0.17477668821811676,
+        "bare_claim": 0.2187991738319397,
+        "reaction": 0.140984907746315
+      },
+      "text": "Typically I do it while it's printing the first layer. So select something with a big solid first layer then adjust z offset as it prints.",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1wncbyx/test_prints_perfect_but_my_own_files_print_like/pbz923l/",
+      "word_count": 26,
+      "character_count": 138,
+      "correct": false,
+      "baseline_prediction": "actionable_advice",
+      "baseline_correct": true
+    },
+    {
+      "comment_id": "pbs3awq",
+      "true_label": "actionable_advice",
+      "predicted_label": "reasoned_explanation",
+      "confidence": 0.4477374255657196,
+      "probability_reasoned_explanation": "0.4477374255657196",
+      "probability_actionable_advice": "0.1499582827091217",
+      "probability_bare_claim": "0.2691929042339325",
+      "probability_reaction": "0.13311128318309784",
+      "probabilities": {
+        "reasoned_explanation": 0.4477374255657196,
+        "actionable_advice": 0.1499582827091217,
+        "bare_claim": 0.2691929042339325,
+        "reaction": 0.13311128318309784
+      },
+      "text": "I know most posts are fixated on making new things but depending on the printer it can be super helpful to learn the different functions in your slicer and settings in the printer. I have spent tons of time running different calibration prints to get the best output I can. It still has issues sometimes and needs a bit of tweaking to get it right. Do searching here and Google, change a setting at a time to compare. Sometimes the changes are tiny but they all add up in the end to make a better product. I just went through a ton of settings to speed up my prints, I might get some hate but AI was great to ask questions and *usually* get the right answer. I was able to tremendously speed up my prints and increased the quality of my prints with a couple other settings as well. \n\nPLA is awesome but is your printer setup and optimized for PETG? Is the printer enclosed? Vented in any way? \n\nI agree with a bunch of other posters, it will sit off for weeks and then all out for a project, then off again.",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1woz4hu/how_to_keep_printing/pbs3awq/",
+      "word_count": 194,
+      "character_count": 1007,
+      "correct": false,
+      "baseline_prediction": "actionable_advice",
+      "baseline_correct": true
+    },
+    {
+      "comment_id": "pbwahsa",
+      "true_label": "actionable_advice",
+      "predicted_label": "reasoned_explanation",
+      "confidence": 0.44199079275131226,
+      "probability_reasoned_explanation": "0.44199079275131226",
+      "probability_actionable_advice": "0.18078580498695374",
+      "probability_bare_claim": "0.22773107886314392",
+      "probability_reaction": "0.14949224889278412",
+      "probabilities": {
+        "reasoned_explanation": 0.44199079275131226,
+        "actionable_advice": 0.18078580498695374,
+        "bare_claim": 0.22773107886314392,
+        "reaction": 0.14949224889278412
+      },
+      "text": "Barely even need to do much work for this, put it on a printers scanner with a quarter for reference, scan the 2D image of object into your pc then into a CAD software and just trace, use the quarter to make sure the size is correct then print",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1wpkb6x/can_someone_make_me_a_3d_file/pbwahsa/",
+      "word_count": 49,
+      "character_count": 243,
+      "correct": false,
+      "baseline_prediction": "actionable_advice",
+      "baseline_correct": true
+    },
+    {
+      "comment_id": "pbxuuvr",
+      "true_label": "bare_claim",
+      "predicted_label": "reasoned_explanation",
+      "confidence": 0.42881160974502563,
+      "probability_reasoned_explanation": "0.42881160974502563",
+      "probability_actionable_advice": "0.1738496720790863",
+      "probability_bare_claim": "0.26402416825294495",
+      "probability_reaction": "0.13331462442874908",
+      "probabilities": {
+        "reasoned_explanation": 0.42881160974502563,
+        "actionable_advice": 0.1738496720790863,
+        "bare_claim": 0.26402416825294495,
+        "reaction": 0.13331462442874908
+      },
+      "text": "This overhang honestly looks like it'd print fine unless you disabled cooling. Don't know the specs of the s1 pro but my ender 3 v2 could do that fine.\n\nDoes this happen on every model you print? If you did say a benchy or a xyz calibration cube is it still all fucked up? Could be something wrong in your motion system.",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1wpravu/whats_wrong_with_my_printer/pbxuuvr/",
+      "word_count": 62,
+      "character_count": 320,
+      "correct": false,
+      "baseline_prediction": "reasoned_explanation",
+      "baseline_correct": false
+    }
+  ],
+  "paired_correctness_ids": {
+    "both_correct": [
+      "pc8hcno",
+      "pc8ivai",
+      "pc5swga",
+      "pc10ame",
+      "pc6plm8"
+    ],
+    "baseline_only_correct": [
+      "pc82dg6",
+      "pc8h6ku",
+      "pc8bx8s",
+      "pbz923l",
+      "pc7hni7",
+      "pc1nuul",
+      "pc52si2",
+      "pc8049h",
+      "pbxvzfa",
+      "pc2z8bp",
+      "pc2q6x0",
+      "pbqali6",
+      "pbwghp3",
+      "pbwahsa",
+      "pc75o5i",
+      "pbvocbw",
+      "pbs3awq",
+      "pbzqybs",
+      "pbhpatg",
+      "pc5n7uz",
+      "gvulutz",
+      "gxiw1ug",
+      "gyxhfex"
+    ],
+    "finetuned_only_correct": [
+      "pc8eq5n",
+      "pbyais7",
+      "pby2dli",
+      "pbxvstp",
+      "pc7iznx",
+      "pbpdqaf",
+      "pbus7oe",
+      "pc7asxn",
+      "pc0kjxu"
+    ],
+    "both_wrong": [
+      "pc2z9ha",
+      "pbxuuvr",
+      "pbvt4gq",
+      "pc73j6t",
+      "pc6wuas",
+      "pc6q6c9"
+    ]
+  },
+  "paired_correctness_counts": {
+    "both_correct": 5,
+    "baseline_only_correct": 23,
+    "finetuned_only_correct": 9,
+    "both_wrong": 6
+  },
+  "prediction_agreement": 7,
+  "prediction_disagreement": 36,
+  "prediction_pair_counts": [
+    {
+      "baseline": "actionable_advice",
+      "finetuned": "reasoned_explanation",
+      "count": 15
+    },
+    {
+      "baseline": "bare_claim",
+      "finetuned": "reasoned_explanation",
+      "count": 11
+    },
+    {
+      "baseline": "reaction",
+      "finetuned": "reasoned_explanation",
+      "count": 6
+    },
+    {
+      "baseline": "reasoned_explanation",
+      "finetuned": "reasoned_explanation",
+      "count": 6
+    },
+    {
+      "baseline": "reaction",
+      "finetuned": "bare_claim",
+      "count": 4
+    },
+    {
+      "baseline": "bare_claim",
+      "finetuned": "bare_claim",
+      "count": 1
+    }
+  ],
+  "feature_definitions": {
+    "technical_lexicon_regex": "\\b(print\\w*|filament\\w*|nozzle\\w*|layer\\w*|bed|slicer\\w*|petg|pla|tpu|support\\w*)\\b",
+    "word_count": "whitespace split; descriptive, not tokenizer length"
+  },
+  "feature_statistics": {
+    "technical_lexicon": {
+      "true": {
+        "count": 32,
+        "correct": 13,
+        "reasoned_predictions": 28
+      },
+      "false": {
+        "count": 11,
+        "correct": 1,
+        "reasoned_predictions": 10
+      }
+    },
+    "question_mark": {
+      "true": {
+        "count": 10,
+        "correct": 1,
+        "reasoned_predictions": 9
+      },
+      "false": {
+        "count": 33,
+        "correct": 13,
+        "reasoned_predictions": 29
+      }
+    },
+    "multiline": {
+      "true": {
+        "count": 19,
+        "correct": 8,
+        "reasoned_predictions": 17
+      },
+      "false": {
+        "count": 24,
+        "correct": 6,
+        "reasoned_predictions": 21
+      }
+    },
+    "at_most_20_words": {
+      "true": {
+        "count": 7,
+        "correct": 0,
+        "reasoned_predictions": 4
+      },
+      "false": {
+        "count": 36,
+        "correct": 14,
+        "reasoned_predictions": 34
+      }
+    }
+  },
+  "representative_errors": [
+    {
+      "comment_id": "pbz923l",
+      "true_label": "actionable_advice",
+      "predicted_label": "reasoned_explanation",
+      "confidence": 0.4654392600059509,
+      "probability_reasoned_explanation": "0.4654392600059509",
+      "probability_actionable_advice": "0.17477668821811676",
+      "probability_bare_claim": "0.2187991738319397",
+      "probability_reaction": "0.140984907746315",
+      "probabilities": {
+        "reasoned_explanation": 0.4654392600059509,
+        "actionable_advice": 0.17477668821811676,
+        "bare_claim": 0.2187991738319397,
+        "reaction": 0.140984907746315
+      },
+      "text": "Typically I do it while it's printing the first layer. So select something with a big solid first layer then adjust z offset as it prints.",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1wncbyx/test_prints_perfect_but_my_own_files_print_like/pbz923l/",
+      "word_count": 26,
+      "character_count": 138,
+      "correct": false,
+      "baseline_prediction": "actionable_advice",
+      "baseline_correct": true,
+      "interpretation": "The comment supplies a procedure: adjust z offset during a large first layer. It does not develop why the adjustment solves a problem. Mistaking a multi-step technical procedure for supported reasoning is consistent with this error, but no causal feature attribution was performed.",
+      "interpretation_status": "AI-assisted hypothesis checked against saved text and taxonomy; not independently student-verified"
+    },
+    {
+      "comment_id": "pc1nuul",
+      "true_label": "bare_claim",
+      "predicted_label": "reasoned_explanation",
+      "confidence": 0.3027719259262085,
+      "probability_reasoned_explanation": "0.3027719259262085",
+      "probability_actionable_advice": "0.2110162228345871",
+      "probability_bare_claim": "0.2646987736225128",
+      "probability_reaction": "0.22151309251785278",
+      "probabilities": {
+        "reasoned_explanation": 0.3027719259262085,
+        "actionable_advice": 0.2110162228345871,
+        "bare_claim": 0.2646987736225128,
+        "reaction": 0.22151309251785278
+      },
+      "text": "That is the proper TP orientation...",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/1wq4xmx/using_magnets_as_spring_is_such_a_satisfying/pc1nuul/",
+      "word_count": 6,
+      "character_count": 36,
+      "correct": false,
+      "baseline_prediction": "bare_claim",
+      "baseline_correct": true,
+      "interpretation": "The brief orientation assertion supplies neither a mechanism nor a concrete next step. Predicting an explanation for this six-word claim shows that the dominant class extends to short unsupported assertions; technical vocabulary or length alone cannot establish the cause.",
+      "interpretation_status": "AI-assisted hypothesis checked against saved text and taxonomy; not independently student-verified"
+    },
+    {
+      "comment_id": "gyxhfex",
+      "true_label": "reaction",
+      "predicted_label": "bare_claim",
+      "confidence": 0.2731325030326843,
+      "probability_reasoned_explanation": "0.25859102606773376",
+      "probability_actionable_advice": "0.2136656641960144",
+      "probability_bare_claim": "0.2731325030326843",
+      "probability_reaction": "0.2546108067035675",
+      "probabilities": {
+        "reasoned_explanation": 0.25859102606773376,
+        "actionable_advice": 0.2136656641960144,
+        "bare_claim": 0.2731325030326843,
+        "reaction": 0.2546108067035675
+      },
+      "text": "Thought of Mongolia 😄",
+      "source_url": "https://www.reddit.com/r/3Dprinting/comments/nhp6b5/my_first_3d_print_so_proud_of_myself/gyxhfex/",
+      "word_count": 4,
+      "character_count": 21,
+      "correct": false,
+      "baseline_prediction": "reaction",
+      "baseline_correct": true,
+      "interpretation": "The Mongolia association and smiling emoji express a social reaction rather than a technical claim. Its bare_claim prediction illustrates a missed social function. This interpretation follows the text and taxonomy, not a causal explanation of model internals.",
+      "interpretation_status": "AI-assisted hypothesis checked against saved text and taxonomy; not independently student-verified"
+    }
+  ],
+  "training_losses": [
+    {
+      "epoch": 1,
+      "train_loss": 1.3622824292497586,
+      "validation_loss": 1.3290663900829496
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.283482761552491,
+      "validation_loss": 1.296621458871024
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.2327025420774662,
+      "validation_loss": 1.2820293335687547
+    }
+  ],
+  "interpretation_limits": [
+    "Exploratory post-test descriptions, not causal attribution.",
+    "Correctness/length association is confounded by true class and prediction collapse.",
+    "197 training examples and class imbalance may limit learning; no causal ablation was run.",
+    "Only 39 optimization steps occurred; decreasing loss does not demonstrate semantic separation.",
+    "Technical lexicon is shared across functions, but dominant predictions also occur without those words."
+  ],
+  "source_sha256": {
+    "finetuned_predictions.csv": "e9fb502d3d24391c8405c6d768284b7e456acf040e1579c1f7cb2d3347f4c23d",
+    "baseline_predictions.csv": "91ad3c1bb9ba12a64b1ff64188330be0d20c262078ccf4537d27e1062f4537f1",
+    "finetuned_errors.csv": "c1c41abcfc812aafac6434a4630437f0ed25afd78c02baaded3a5a79c40ebbb7",
+    "training_results.json": "ab3d962a030999ef1bc534edb42d707b4b9dd7e7255945107027e5f3f243e330"
+  }
+}

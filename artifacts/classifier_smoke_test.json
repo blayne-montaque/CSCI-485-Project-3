@@ -1,0 +1,67 @@
+{
+  "purpose": "Actual inference smoke test on newly authored input; not graded evaluation",
+  "groq_key_in_environment": false,
+  "groq_module_imported": false,
+  "records": [
+    {
+      "input": "Try printing a small calibration cube before the next large part.",
+      "predicted_label": "reasoned_explanation",
+      "confidence": 0.35223254561424255,
+      "probabilities": {
+        "reasoned_explanation": 0.35223254561424255,
+        "actionable_advice": 0.2141387015581131,
+        "bare_claim": 0.24074958264827728,
+        "reaction": 0.192879319190979
+      },
+      "device": "cpu",
+      "input_tokens": 16,
+      "truncated": false,
+      "max_sequence_length": 256
+    },
+    {
+      "input": "That little model looks wonderful!",
+      "predicted_label": "reaction",
+      "confidence": 0.26940861344337463,
+      "probabilities": {
+        "reasoned_explanation": 0.250362753868103,
+        "actionable_advice": 0.21523939073085785,
+        "bare_claim": 0.26498928666114807,
+        "reaction": 0.26940861344337463
+      },
+      "device": "cpu",
+      "input_tokens": 8,
+      "truncated": false,
+      "max_sequence_length": 256
+    },
+    {
+      "input": "Try printing a small calibration cube before the next large part.",
+      "predicted_label": "reasoned_explanation",
+      "confidence": 0.3522324860095978,
+      "probabilities": {
+        "reasoned_explanation": 0.3522324860095978,
+        "actionable_advice": 0.21413862705230713,
+        "bare_claim": 0.2407495230436325,
+        "reaction": 0.1928793042898178
+      },
+      "device": "cuda:0",
+      "input_tokens": 16,
+      "truncated": false,
+      "max_sequence_length": 256
+    },
+    {
+      "input": "That little model looks wonderful!",
+      "predicted_label": "reaction",
+      "confidence": 0.26940861344337463,
+      "probabilities": {
+        "reasoned_explanation": 0.25036272406578064,
+        "actionable_advice": 0.21523937582969666,
+        "bare_claim": 0.2649892568588257,
+        "reaction": 0.26940861344337463
+      },
+      "device": "cuda:0",
+      "input_tokens": 8,
+      "truncated": false,
+      "max_sequence_length": 256
+    }
+  ]
+}
