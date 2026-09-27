@@ -6,7 +6,9 @@
 - `data/annotation_working.csv` starts as a copy of the raw pool and holds AI suggestions, review state, and the student's eventual final labels. It is not the final assignment dataset.
 - `data/collection_summary.json` records the actual retrieval and deterministic-filter counts for the collection run.
 - `data/prelabel_summary.json` is created only after a configured Groq pre-labeling run.
-- `data/labeled_posts.csv` must not exist until every accepted example has been personally reviewed and finalization is deliberately run.
+- `data/labeled_posts.csv` is the finalized assignment dataset. Annotation is complete: it contains the 282 personally reviewed, accepted examples and uses the student's `final_label` values as its `label` column.
+- `data/dataset_summary.json` records the observed final class distribution, annotation-assistance statistics, and data-validation results for this checkpoint.
+- `data/difficult_cases.json` records only examples the student actually flagged as difficult or ambiguous during review.
 
 The collector uses the Arctic Shift public Reddit archive API. It queries r/3Dprinting comments using multiple technical-topic terms, then retrieves source post titles by thread ID. It saves comment text, comment permalink, thread ID and URL, title, timestamps, public score, retrieval time, and source-topic query. It deliberately does not save authors.
 
@@ -44,7 +46,11 @@ Pre-labeling requires a local `.env` containing `GROQ_API_KEY`, which must remai
 
 The script uses the taxonomy and boundary rules from `planning.md`, requests one valid proposed label plus an ambiguity flag and short note, and writes no final labels or human-review actions. It records the exact model and outcomes in `data/prelabel_summary.json`. Invalid or failed responses remain unclassified rather than being guessed.
 
-## Finalize only after personal review
+## Finalized dataset checkpoint
+
+Personal annotation is complete. `data/labeled_posts.csv` is the finalized human-reviewed dataset; it contains only `text` and the authoritative human `label` required for the assignment. It does not include AI proposals or unreviewed candidates.
+
+The command below documents how finalization is deliberately guarded for a future fresh review workflow. It must not be rerun while the finalized file already exists.
 
 After personally reviewing every accepted row, validate and produce the assignment-compatible two-column CSV:
 

@@ -1,0 +1,90 @@
+{
+  "total_final_examples": 282,
+  "class_distribution": {
+    "reasoned_explanation": 90,
+    "actionable_advice": 49,
+    "bare_claim": 82,
+    "reaction": 61
+  },
+  "class_percentages": {
+    "reasoned_explanation": 0.3191489361702128,
+    "actionable_advice": 0.17375886524822695,
+    "bare_claim": 0.2907801418439716,
+    "reaction": 0.21631205673758866
+  },
+  "human_reviewed_rows": 282,
+  "accepted_examples": 282,
+  "excluded_examples": 0,
+  "unreviewed_rows": 178,
+  "annotation_assistance": {
+    "accepted_examples_with_valid_proposed_label": 282,
+    "overall_agreement_count": 282,
+    "overall_agreement_rate": 1.0,
+    "human_correction_count": 0,
+    "confusion_proposed_to_final": {
+      "reasoned_explanation": {
+        "reasoned_explanation": 90,
+        "actionable_advice": 0,
+        "bare_claim": 0,
+        "reaction": 0
+      },
+      "actionable_advice": {
+        "reasoned_explanation": 0,
+        "actionable_advice": 49,
+        "bare_claim": 0,
+        "reaction": 0
+      },
+      "bare_claim": {
+        "reasoned_explanation": 0,
+        "actionable_advice": 0,
+        "bare_claim": 82,
+        "reaction": 0
+      },
+      "reaction": {
+        "reasoned_explanation": 0,
+        "actionable_advice": 0,
+        "bare_claim": 0,
+        "reaction": 61
+      }
+    },
+    "agreement_by_proposed_label": {
+      "reasoned_explanation": {
+        "accepted_examples": 90,
+        "agreement_count": 90,
+        "agreement_rate": 1.0
+      },
+      "actionable_advice": {
+        "accepted_examples": 49,
+        "agreement_count": 49,
+        "agreement_rate": 1.0
+      },
+      "bare_claim": {
+        "accepted_examples": 82,
+        "agreement_count": 82,
+        "agreement_rate": 1.0
+      },
+      "reaction": {
+        "accepted_examples": 61,
+        "agreement_count": 61,
+        "agreement_rate": 1.0
+      }
+    },
+    "ai_flagged_ambiguous_accepted_examples": 13,
+    "student_flagged_difficult_accepted_examples": 0,
+    "per_example_annotation_model_provenance_available": false,
+    "annotation_model_provenance_note": "The working CSV does not retain a model identifier per row; run-level summaries cannot reliably attribute each accepted example to a model."
+  },
+  "validation": {
+    "total_rows": 282,
+    "duplicate_comment_ids": 0,
+    "duplicate_normalized_text": 0,
+    "missing_text": 0,
+    "invalid_labels": 0,
+    "provenance_coverage": 282,
+    "provenance_coverage_rate": 1.0,
+    "no_class_exceeds_70_percent": true,
+    "smallest_class_percentage": 0.17375886524822695
+  },
+  "difficult_cases_file": "data/difficult_cases.json",
+  "labeled_dataset_file": "data/labeled_posts.csv"
+}

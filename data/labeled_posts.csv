@@ -1,0 +1,794 @@
+text,label
+This post has the troubleshooting tag but I don't see a pinned comment. Maybe it exists but I don't see it here,reaction
+You have to remove top layer,actionable_advice
+Haven’t done either in a few years. Newer printers like the prusaXL use a sensor to automatically get a a perfect first layer every time.,bare_claim
+Sadly I have to agree. I made the 2.5 hour drive from Maryland hoping for big show energy and left disappointed. I was expecting for the extra time and cost and hassle with parking etc Id get a bigger better con experience. I had a great time last year and this year didn’t match that vibe and experience. I went home with a few roles of filament but not much else. Several vendors I spoke to mentioned they weren’t selling at the show due to difficulties getting products there and the difficult tax situation to navigate. I will also likely sit next year out if back in Philly. I get moving the show to expand and make it more accessible to grow the show but If anything it felt smaller and less inviting this year. Kudos for keeping ticket prices low though had I paid more on top of the extra travel etc for todays experience I would have gone from just disappointed to angry.,reaction
+I'm sad it's several hours and no one has made a TPU joke.,reaction
+"You could import it into Nomad or Blender to add some organic 3D sculpted elements. Or, you can scan your drawn elements and convert to svg and put them in as a modifier. Assuming you’re using Orca/Bambu/Prusa slicer, the “+” block at the left of the toolbar will accept an svg as a file type. Orient and scale it on your part. Then right click merge it with your part. Then right click make modifier the svg. Then select the color for the modifier. 
+
+You can see the technique here on these retainer cases I made.   
+https://makerworld.com/models/1939533?",reasoned_explanation
+"I’m not sure I buy that. A typical 3d printer used a stepper motor with a 1.8 or .9 degree step. The stepper can also micro step to 1/16 of a step. A typical leadscrew moves 8 mm or less per rotation depending on the number of starts and leads.  So worst case on an ender 3 with 200 steps per rotation and a 8 mm lead you would move .04 mm per step and if the printer can do micro stepping it can do 1/16 of that or .0025 mm per step. 
+
+The default settings in the slicer don’t accurately communicate the true capabilities of z height because in the past micro stepping wasn’t a feature offered on early stepper drivers so the .04 mm increments was the limit. Now days most printers sold do use micro stepping so they can achieve far smaller steps.",reasoned_explanation
+"thats still overextrusion in my eyes, i use 0 from the calibration and im good O\_o
+
+petg hf though",actionable_advice
+"When my Saturn had a screen failure I bought a cheap AnyCubic on sale for $150 CAD (not sure of model, print size was between a mars and a Saturn, closer to the bigger end. 
+
+Printed great. Nothing failed ever. Lasted a fair bit longer than the Saturn or Mars and only stopped using it when my divorce kicked off.",bare_claim
+I'd start experimenting with different filaments and more complex functional prints. That's where you'll learn the most from troubleshooting.,actionable_advice
+"Glad it helped. Dry the spool first, then change the top layers — that order matters.",actionable_advice
+You pause adjust restart until your happy with the first layer,actionable_advice
+If the shell cracks on assembly you're probably using bad filament or bad print settings.,bare_claim
+"The Neptune 2 has a Bowden extruder. For TPU, you should probably upgrade to direct drive.",actionable_advice
+"What's the print look like i
+?  I had this happen on tall thinner prints adding a brim helped that but yours looks like it has just started what's your infill pattern some pattern will cause the nozzle to hit the print and catch it knocking it or removing it from the  change it to gyroiod  or change the print orientation by rotating it a different direction",actionable_advice
+"just a guess but it looks like your model may not be solid. This happens when a wall is missed, leaving a modem without any actual volume just a wireframe. You can try doing a ""repair"" in most slicers but you may have to go back to blender and figure out where it's not closed up at",reasoned_explanation
+"You can try doing the ck3D Flexi flow rate calibration (without brim ofc)  you'll find it easily on printables, if changing the flow rate doesn't change your calibration object's tolerances it might be the default Z offset",reasoned_explanation
+"very slick, fit rights in. can you:
+
+1. provide the CAD files; or
+
+2. tell us what threads those are so we can make our own?
+
+  
+Thanks",bare_claim
+"Hey everyone!
+
+I’m looking to get my first 3D printer and have around **$500-$600** and live in **Europe**. I’m new to 3D printing, but I have some experience with DIY/home projects, I’m a student, so I have plenty of time and motivation to learn, troubleshoot, and tinker with the machine and have been watching 3D printing content for a while now.
+
+My current top contender is the **SOVOL SV08**.
+
+What I like about the SV08 is that it has an active modding/upgrading community and the fact that its open-source.
+
+I’m not necessarily looking for something that works perfectly out of the box with zero tinkering. I actually enjoy the idea of learning how the printer works and gradually upgrading/improving it over time.
+
+I’d like to print a mix of functional parts and more creative projects, especially miniatures for board games.
+
+I’d also like to experiment with more demanding, higher-end materials later down the line, which is one of the reasons I value upgradeability. Overall, I like the idea of upgrading the printer as my skills and needs grow ( i.e. I don’t necessarily need a heated chamber right away, since I’ll probably start out with PLA )
+
+Are there other printers around **$500** that I should seriously consider?",bare_claim
+The tolerances are too tight. It's supposed to clip together but the layer lines create a weak point on both versions.,bare_claim
+Typically I do it while it's printing the first layer. So select something with a big solid first layer then adjust z offset as it prints.,actionable_advice
+"https://preview.redd.it/vt9bfa2bzwrh1.jpeg?width=1290&format=pjpg&auto=webp&s=8ee8fba50c622da4068a450b647deea7f2cbb9f0
+
+I used about 10 rolls of filament total. It took about 10 days to print. The black is petg and the orange is pla. You have to make the lower limbs more dense than the top so it can stand and be posed. I haven’t seen anyone else that has been able to make their XL figures stand let alone be posable. The way I achieved it was printing the joints with a piece that slots in after assembly, and using grip paint. That’s the secret it would seem. Let me know if you try it! I can probably find my STL files somewhere if you want but they are a bit disorganised.",reasoned_explanation
+"Thank you. 
+
+I suppose I wanted to approach 3d printing the same way engineering school teaches engineering. 
+
+I bought the wrong TPU, which was a good lesson.",bare_claim
+"Baby servos a economic quality ballscrews can generate the force, but that's not the issue, the issue is the orientation of the support material/guides and the diving board (spring) that is created",bare_claim
+Lol idk man its whatever out of the box slicer came with the printer. Ill check when I get home. I thought it was dry because I just opened the spool from a vacuum sealed package with desiccant but I have learned from this thread that means nothing.,reaction
+"If you run Flow Calibration and Pressure Advance Calibration that Z-Seam will look a lot better, if you then switch it to Scarf Seam it'll be close to invisible.",reasoned_explanation
+"Like i said, this is like my second CAD model ever, I can't just eye ball this stuff 😭, I'll try to use the dimensions you mentioned to get anything modelled as a base, so thank you",reaction
+"""troubleshoot"" 🤭",reaction
+"First of all, does it *need* to be this thin? If you can make it thicker, that will make it easier to print.
+
+If it really does need to be that thin, then you'll need to seriously slow down the printing. Find the setting in your slicer for the minimum layer time. Either increase that time, or decrease the minimum speed, and see if that fixes it.
+
+Also look where the slicer has placed the seams. Ideally the seams should *not* be on the overhang, or else it will start printing each layer in mid-air.",reasoned_explanation
+If I have this issue I usually have to wash the plate with dish soap and it fixes the issue. Sometimes if I do multiple prints of the and object the cooling can mess with the layering a bit but mostly it's just first layer adhesive issues.,actionable_advice
+White filaments tend to use titanium dioxide as a pigment.  Because of this the temp needed for white filaments tends to be higher.,reasoned_explanation
+"I actually didn’t even really consider that haha, just grabbed a random TPU test print file off thingverse. Trying a much simpler one now, we’ll see how it goes.",reaction
+That is the proper TP orientation...,bare_claim
+Also pretty easy in the slicer now,bare_claim
+"also a worn nozzle can do this, if a 0.4mm is now 0.6mm and the edges of the tip are rounded it's far more likely to be oozing out even when everything else is well calibrated",reasoned_explanation
+"I'll try then, thank you
+I was just worried about eye balling it since i just started CAD and printing is expensive here so i gotta get this right first time",reaction
+because i know how to troubleshoot? i don't even know what you need to touch my dude,reaction
+"Because its just a single wall, instead of doing discretely seperate layers it slowly spirals upwards as it goes, so its just one continuous path. If you were to follow a layer line around, instead of just hitting a seam you would eventually reach the top or bottom of the print depending on which way you go. So because of that there is also no seam at all. So its *kinda* one layer that just wraps around. 
+
+Though I think generally it does print a couple regular layers first to form a base and then it does the single layer wall spiraling up.",reasoned_explanation
+"This is not a filament, leveling, or dirty-nozzle problem. The first layers are fine and the rest of the print is fine, so the machine is only failing across a short stretch of Z travel. That smeared, stacked band at the corner is what it looks like when the gantry does not rise cleanly for a few millimeters — the nozzle keeps putting plastic into almost the same height, the layers squash and wrinkle, then the axis frees and printing looks normal again. On an Ender 3 S1 Pro that almost always means the Z lead screws are dry, dirty, or binding at that exact height. A cable or PTFE tube catching the gantry there can do the same thing. Dust on the rod is possible, but a full teardown is the last step, not the first.
+Do this in order. Send the nozzle to that height and move Z up and down by 10 mm while you watch both lead screws, both Z nuts, and every cable. You should feel a tight spot. Clean both screws, put a thin coat of Super Lube or light machine grease on the full length, then run Z from the bed to the top a few times so the nuts pick up the lube. Check that the X gantry is the same height on the left and right — dual-Z machines bind for a few millimeters when one side leads. Make sure the loom and tube are not tugging at that height. Print the same part again. If the band is gone, you are done. If it is still there, replace the Z couplers and check the screws for a bent section. Taking the whole printer apart before that usually changes nothing.",reasoned_explanation
+I checked clogs and it’s clear. All the other filaments work just fine as well. I will try turning it up,bare_claim
+"yes - i have the elegoo Carbon II.  I printed the blue 72D last night using the elegoo rapid TPU settings, with a 5 degree bump in printing temp and it did quite well, and it was fast for tpu.  I don't have the canvas, but i was running it thru the tubing to the print head and had no issues.  My prints were not particularly rigid, and this stuff wasn't super springy, more just bendy.",bare_claim
+"Totally agree. Designing for the print from the start is the real answer, and it's how I model my own parts. The game is really for the other case: a random Printables download where the right orientation isn't obvious and you're weighing supports against looks against strength.
+
+And no, it's not farming AI training data. It's just a puzzle I built because I overthink orientation. The daily parts and the ""best"" answers are set on my end, and I don't send your moves to anyone or train anything on them.",bare_claim
+dawg which slicer are you using? is it 95a? 85a? is the stuff even dry?,bare_claim
+"I see you have Rinkhals installed. Try calibrating the e-steps. It looks like there might be a little too much coming out,. It also might be a firmware thing.  https://www.youtube.com/watch?v=L62R22E41_w
+
+Doug mentions sometings and actually gets different results printing from the USB vs over network.",actionable_advice
+"Blender has a 3MF import/export plugin, and it is so very good at freehanding stuff.
+
+The downside is that, once you update your CAD model, you'll have to repeat the Blender refinement.  Of course, freehanding includes the ability to copy-paste transfer bits and bobs of your old version to the new version easily.  It can be a very quick thing to do.  But it's still an extra friction step.  In the long run, it will make you think twice before spinning yet another revision of your CAD base design. Sooner or later you'll fix minor issues directly in Blender, and your CAD models are demoted to an outdated precursor helper files rather than the authoritative archival source of truth.",reasoned_explanation
+"Hi everyone,
+
+I'm from Slovenia (EU) and I'm looking for advice on buying a new FDM 3D printer.
+
+My budget is **€300 maximum**, and I really can't go above that. I'm looking for a printer with a build volume of around **300 × 300 mm or larger**. I would prefer not to go smaller because I'm already used to having a large build plate.
+
+I mainly want to print **PLA, PETG and TPU/flexible filament**, as well as occasional figurines and practical parts, repairs and things for around the house.
+
+I'd also like the new printer to be **significantly faster than older printers**, but reliability is very important to me. Ideally, I'd like to assemble and properly set it up once and then mostly just print, without constantly having to deal with bed leveling, calibration and troubleshooting.
+
+I'm currently considering the **Elegoo Neptune 4 Plus** and **Sovol SV06 Plus ACE**, but I'm open to other suggestions.
+
+For those who have actually owned these or similar printers for a while:
+
+**What would you recommend for €300 or less in the EU?**
+
+I'm especially interested in long-term experience:
+
+* How often do you have to recalibrate it?
+* How reliable is the bed leveling?
+* How do PLA, PETG and TPU perform?
+* What is the realistic printing speed while maintaining good quality?
+* What problems have you experienced after several months of use?
+* Would you buy the same printer again?
+
+I'm mainly looking for a good combination of **large build volume, speed, print quality and reliability**, with as little maintenance and troubleshooting as possible.
+
+Thanks!",bare_claim
+"if anything, the first layer is too high. you can see the unconnected lines whick means the first layer has no squish to the bed.   this is no big deal on small prints like the whistle, but anything slightly tall might come off right away.
+
+Depending on what printer youre using, you can adjust pressure advance settings, flow, and/or ironing   on the last layer.  personally, ironing will not give a consistent result, so dont expect a perfectly smooth surface. it CAN happen, but its more of a coin toss thing",reasoned_explanation
+"Lower temp & speed, this looks like you are prining too fast for that overhang, its not that extreme of an angle but judging on your first layers its lifting, also try to dial in bed adhesion first. Some PLA's want 185 on my printer for whatever reason.",reasoned_explanation
+"damn...maybe you should...not use the cheapest filaments you can find and stick to reputable manufacturers lol. there's no reason not to. lots of good, cheap filament manufacturers",actionable_advice
+"PETG is the way to go. It's more durable then PLA. Make sure to dry it before printing, even if it's new. TPU is soft and flexible. It requires a completely different approach to printing. If you don't require the flexibility, then avoid it for this project.",actionable_advice
+"Personally, I'm on the hyper-functional side. I have no time for the decor-oriented stuff, and I hate the stuff like the dragons, it's just landfill.",bare_claim
+The slicer has option to cut and add connectors. You can directly use that,actionable_advice
+"I calibrate the paper I use with a feeler gauge, if that helps.",actionable_advice
+"With not know the complexity or type of details you’re doing, you could approach it from a few ways. Free hand the design detail in a graphic editor and import an image, use splines to trace the image. Or perhaps use something like Adobe Illustrator to draw out vectors and import the SVG into your CAD software. 
+
+There may be other ways but these were the two that I’m family with trying.",actionable_advice
+"Z-offset slightly too high.  
+  
+!firstlayer - adhesion and warping  
+  
+With PLA, a clean smooth surface is best. PEI or PEX is great. You may have to raise the bed temperature on a textured sheet. Silk PLA may need a higher initial bed temperature.  
+  
+PETG, TPU, ABS, and others will need a release agent on a smooth build surface. That's what the glue stick (or hair spray, Windex^^® ) is for. On a textured sheet, no release agent is normally needed.  
+  
+Just alcohol will not remove the sugar film left by PLA which can hinder adhesion.  
+Wash the sheet with warm water and dish soap. Dry. Wipe with > 70% Isopropyl alcohol before the print.  
+  
+No part cooling fan for 3 layers. Very slow print speed for the first layer.  
+  
+To prevent warping for PLA, bed temperature of 65° for the first layer, 55° for the rest of the print. This way the bottom gets the adhesion but the bottom starts cooling with the upper layers.  
+For PETG on textured bed, same concept, usually around 80° then 75°, or 75° then 70°.  
+Temperatures are examples, different build sheets may need different temperatures.  
+  
+Infill style can affect warping. Some grid type infills can concentrate the stress in one area. Gyroid infill will spread out the internal stresses.  
+Increasing walls number and reducing infill may also help.  
+  
+https://www.printables.com/model/251587-stress-free-first-layer-calibration-in-less-than-5  
+
+  
+How to Correct the Z-Offset on Your Ender 3, Ender 3 V2 and Ender 3 Pro – Howchoo  
+https://howchoo.com/ender3/adjust-z-offset-ender-3-v2-pro/",reasoned_explanation
+"Nothing is wrong.  With the printer at least.  Steep overhangs like that, generally don't print well.  Slower, and more cooling can help.  3d printers don't like to print overhangs that are steeper than say.. 60deg.  45 deg is \~genuinely\~ safe.  
+
+You may also be overextruding a bit?  And maybe a bit close on the first layer.  But this print isn't one I can really identify much with.
+
+Print a benchy, show us again.",reasoned_explanation
+But if he had just dried his filament...,bare_claim
+Friendly reminder that TPU is not safe for this use-case.,bare_claim
+"I think the key to picking print orientation is to begin your design with that in mind, but if you're printing a model you didn't make its definitely a toss up. This game isn't farming AI training data though, is it?",bare_claim
+make sure that in your slicer the print is actually touching the bed. I had some issues with missaligned prints that would not have a very firm base because the actual base was one milimiter away from the base,reasoned_explanation
+That's the crazy part: no you don't. At least on the right printers you don't have to worry about that anymore. You simply run the initial calibration and it's probing the print area / bed before it starts printing. If it does not work > a sensor is dying / about to break.,reasoned_explanation
+"Look around your own kitchen and bathroom first custom-fit organizers, cord clips, and drawer dividers solve real problems and let you iterate fast since they're small prints. Also check r/functionalprint for inspiration specific to CAD-capable makers like you.",reasoned_explanation
+"In this case, I just would do simple callibration and/or change first layer height, to a smaller number. Works on creality hi",actionable_advice
+"Aha, unfortunately, the ""e"" failed to adhere on the first layer, so it printed out as ""Tim"".",reasoned_explanation
+"You may want a purpose-made filament dryer, settable for the various types of filament and with the appropriate amount of air exchange.  
+
+Too hot, and the filament sticks or melts together.
+
+Too cool, it doesn't get dry.
+
+An air fryer is designed to dehydrate what, exactly?  Food?  I wouldn't expect a tight limit on the temperature inside.",reasoned_explanation
+"Asking to print a model like that with tpu is pretty crazy, I'd doubt any printer would print that model well with tpu.",bare_claim
+"I'm not mad at the second picture, those look pretty decent.  The first picture, the top of the item as you're showing it looks like the build plate texture.  So it looks like you're showing us the object printed upside down, so the top that we're seeing is actually the bottom.  And if that is indeed the case, you have absolutely highlighted your own problem.  You're essentially trying to print on air.  
+
+So let's just create a pyramid. If you print from the widest part upwards, everything is supported as it's printed.  If you try to print it upside down so that the point is at the bottom and you're building up to the wide flat surface, then each layer is is effectively not supported from the bottom and you're going to get those ugly layer lines like you got because there's nothing supporting most of the previous layer on the outside.  
+
+The best thing you can do is reorient your print so that the widest part is on the bottom, assuming that the widest part is flat.  There are other tricks you can use which are not going to make it perfect, but for instance if you print inner walls first and then outer walls, the inner wall at least has something next to it to adhere to. But it's not going to fix this issue completely.  You can also do adaptive layer height which might help.  You can also just adjust the layer height. So for a 0.4 novel, you're typically going to print at 0.2 or .24  layer height. That is a good compromise between quality and speed.  If you drop that layer height down to 0.16 and possibly down to 0.12 (mine will not do 0.12 without creating a blob of death), then your layers are shorter, your print time increases, but there are more layers that will make the transition a bit better.   It will help lessen the stair stepping effect, by effectively creating more stairs. 
+
+So if you're using a 0.2 layer height and you go to 0.16 and you see improvement, even if only moderate, then you can start looking at going to maybe a 0.2 mm nozzle, which you will then need to adjust your slicer so it knows which nozzle is using, and then you can get down to like 0.8 mm layer height.  
+
+But overall, print orientation is the biggest thing you can do to improve how something prints.  Print orientation also will change the strength of structural parts, due to vertical layer lines being weaker.",reasoned_explanation
+"That’s unsupported bridging/overhang, not an infill issue. The slicer is trying to lay those lower beams across open air, so PETG sags/stringing underneath. Reorient the model or add supports for those areas. You can also improve it with more part cooling, slower bridge speed, and making sure the PETG is dry, but settings alone probably won’t make that geometry print perfectly unsupported.",reasoned_explanation
+"If you want to print tiny things, you need a high quality and well calibrated printer. Lego is just below the limit on what most 3D printers can handle. Also, don't trust the nominal dimension of Lego, they are rounded up to 1/10 of a mm but the tolerances for it to actually work well are in the 1/100 range, I ended up just buying parts that have the connectors I need, cutting them apart and gluing them onto my 3D prints.",reasoned_explanation
+"Ok so sounds like you are milling away a large amount of the moving mass per the CAD image.  Since you said “rough sketch” it wasn’t clear to me.  
+
+Structural rigidity is good, but not sure dead mass is inherently a benefit for 3d printing the way it is for milling.  I think tool chatter is much higher frequency than anything you need to worry about for 3d printing.
+
+Not sure the advantage of the cantilever design, but if you are keeping the moving mass under control, then it should work.  Lots of A1 mini’s out there",reasoned_explanation
+"Well, you *want* your layers ""melted together""
+
+But you need to look at the speed. First layer is printed much slower than the rest.",reasoned_explanation
+"!firstlayer - adhesion and warping  
+  
+With PLA, a clean smooth surface is best. PEI or PEX is great. You may have to raise the bed temperature on a textured sheet. Silk PLA may need a higher initial bed temperature.  
+  
+PETG, TPU, ABS, and others will need a release agent on a smooth build surface. That's what the glue stick (or hair spray, Windex^^® ) is for. On a textured sheet, no release agent is normally needed.  
+  
+Just alcohol will not remove the sugar film left by PLA which can hinder adhesion.  
+Wash the sheet with warm water and dish soap. Dry. Wipe with > 70% Isopropyl alcohol before the print.  
+  
+No part cooling fan for 3 layers. Very slow print speed for the first layer.  
+  
+To prevent warping for PLA, bed temperature of 65° for the first layer, 55° for the rest of the print. This way the bottom gets the adhesion but the bottom starts cooling with the upper layers.  
+For PETG on textured bed, same concept, usually around 80° then 75°, or 75° then 70°.  
+Temperatures are examples, different build sheets may need different temperatures.  
+  
+Infill style can affect warping. Some grid type infills can concentrate the stress in one area. Gyroid infill will spread out the internal stresses.  
+Increasing walls number and reducing infill may also help.  
+  
+https://www.printables.com/model/251587-stress-free-first-layer-calibration-in-less-than-5  
+
+  
+How to Correct the Z-Offset on Your Ender 3, Ender 3 V2 and Ender 3 Pro – Howchoo  
+https://howchoo.com/ender3/adjust-z-offset-ender-3-v2-pro/",reasoned_explanation
+"I often use 0.4mm nozzles and cheapest filaments I can find. They  actually clogs from time to time, especially in my X2D",bare_claim
+"man i hate tpu lol some printers just dont work great with it, some tpus also just suck. i found ovature 95a to work really well",bare_claim
+It won't if you space them enough. orca slicer will even space them for you if you set your printer profile correctly,actionable_advice
+"You are working on what is unaffectionately known as the blob of death.  
+
+The best way I can explain what you hopefully haven't gotten to yet, is how you weld copper pipes. So you apply heat to the connector and then you put the solder not in the direct path, and the solder gets sucked into the joint.  Left long enough in the situation you're in, what happens is that the filament actually gets sucked up between the silicone sock and the nozzle and will actually encapsulate the entire sock and the wires and it gets ugly. 
+
+The starting issue is that for whatever reason, you have filament that didn't stick to something and therefore nozzle runs into that filament that was just laid down and didn't stick to anything and then it just kind of melts to the nozzle cuz it's hot and then more melts to it and more melts to it and more melts to it and you're sitting there at some point with several millimeters of empty space below the nozzle and the filament that comes out goes up the nozzle not just falling to the build plate.  I'll use big words I don't understand like thermodynamics overriding gravity but yeah I'm just making that up.  
+
+The next question is how do you fix this. Go to your printer control panel I think it's on the home screen where there's the nozzle that maybe that center icon on the left I forget anyway you can go to the nozzle and you can set the temperature so let's say that you print at 220° to set the nozzle to you know maybe 20° above that and make sure your build plate is not right there lower it down some.  So what's going to happen is that your nozzle is going to heat up and then you can very gently especially if the wires are encapsulated be very very very careful, remove the softened plastic.  
+
+Someone else already mentioned the glue, so here's what I'll tell you.  First things first, take your build plate to the kitchen sink and use hot water and Dawn or another grease cutting, non-hand softening lotion nonsense dish soap.  The idea here is to cut the grease, usually from your fingers, you greasy bastard.  Rinse thoroughly dry mostly because oddly enough a build plate will dry once you heat it up. 
+
+Now go through the auto calibration sequence of the printer and let it do all its little touchy-feely stuff.  This, of course is after your nozzle is clean and there's no debris on the bottom of it. 
+
+Now you can apply some glue there was at least one glue stick that was included with your printer, and these apply kind of like Elmer's glue, but there will be residue on the plate that will transfer to the print.  It's not horrible but anyway.  You can also use a spray glue. I've been told that really cheap hairspray does the same job for a lot less money. This will give you a more even surface of adhesion promoting product then the glue sticks, in my experience.  
+
+There is at least one waffle headed moron in this group that will tell you that glue does not promote adhesion, but is an interface layer to help things not stick.  Yep both are kind of true.  The glue will promote adhesion to the very surface of the build plate.  It will also act as a layer between the build plate and whatever you're printing.  This means that the filaments that might otherwise stick too well to the build plate won't over stick because it's not getting into all the little pores like it was.  But overall if you're having adhesion issues, but then layer of hairspray type glue works pretty good in both cases.  If you are using a cryogrip type plate, not the ones that were included with your printer, then glue is counter indicated because of the polymer blah blah blah blah blah pores blah blah blah blah blah",reasoned_explanation
+"I mean i am just sharing my project. I have design requirements that are out of my hands, i just have to make it all work within a budget. 
+Most of these people haven’t even made a printer,  built a kit with instructions and code supplied…
+They also act like all designs are final and didn’t bother to read that the cad sketch was just the initial idea and the design details have changed significantly. There could be 5 different cantilever designs before i find one that works, or ditch the concept all together.",bare_claim
+"It looks like you have 2 issues. First your z offset might be too high. Ik petg likes to not be squished when printing the first layer but that’s too high, you shouldn’t be able to see layer lines on the first layer or they should be very faint, second issue for the top layer is most likely your flow rate is too high. Try dropping z offset by like increments of 0.1 and turn your flow rate for petg down by 0.5 increments till it looks good.",reasoned_explanation
+"Yes, although I think the answer deserves a little more nuance than simply saying “yes,” because whether Tinkercad is “good” for someone new to 3D printing and electronics really depends on what you mean by good, what you’re hoping to accomplish, how much time you’re willing to invest in learning, what kind of projects you eventually want to make, and whether you view Tinkercad as the final destination or as an introductory stepping stone into the much larger worlds of CAD, additive manufacturing, electronics, circuit design, microcontrollers, prototyping, engineering, and digital fabrication.  
+For someone who is genuinely starting from zero, though, I would say Tinkercad is one of the better places to begin precisely because it removes a lot of the complexity that can make more advanced CAD software intimidating when you first encounter it. If you open something like FreeCAD, Fusion, SolidWorks, Onshape, Inventor, or another parametric CAD program without knowing anything about CAD, suddenly you’re dealing with sketches, constraints, dimensions, bodies, planes, features, dependencies, extrusions, pockets, fillets, chamfers, Boolean operations, coordinate systems, design history, and the existential crisis that occurs when your sketch claims it still has one degree of freedom despite the fact that you have spent the last 25 minutes staring directly at it.  
+Tinkercad approaches the problem from almost the opposite direction. Instead of asking you to understand how a professional parametric modeling system thinks before you can make anything useful, it basically gives you geometric building blocks and lets you start combining them. Put down a cube. Resize the cube. Put a cylinder through the cube. Turn the cylinder into a hole. Group them together. Congratulations, you have now performed a Boolean subtraction operation without necessarily even knowing that “Boolean subtraction” is what you just did.  
+And I think that is actually an extremely effective way of introducing someone to 3D modeling because you get the psychological reward of **making something almost immediately**.  
+That matters more than people sometimes give it credit for.  
+If somebody buys their first 3D printer and their first CAD experience consists of watching a 47-minute tutorial explaining fully constrained sketches before they have managed to create so much as a rectangular box, there is a reasonable chance that CAD is going to feel like homework. Tinkercad lets you make the rectangular box first and figure out why CAD gets considerably more complicated later.  
+For 3D printing specifically, it is absolutely capable of producing useful designs. You can make brackets, spacers, organizers, simple enclosures, adapters, holders, signs, basic replacement parts, toys, jigs, fixtures, and plenty of other functional objects. You can learn extremely important concepts such as dimensions, tolerances, alignment, grouping, negative geometry, clearances, wall thicknesses, and how a digital model eventually becomes a physical object.  
+You’ll also very quickly discover one of the most important lessons in 3D printing: just because you designed something to be exactly 20.00 mm does not necessarily mean the thing coming off your printer is going to be exactly 20.00 mm.  
+That leads you naturally into learning about dimensional accuracy, printer calibration, material shrinkage, first-layer effects, tolerances, press fits, clearance fits, nozzle diameter, layer height, wall count, infill, orientation, supports, overhangs, bridging, and the approximately 700 other variables that somehow become relevant when all you wanted to do was print a little box.  
+Tinkercad is also useful because you can develop a basic understanding of **spatial reasoning** before getting buried underneath professional CAD tools. You start thinking about objects as combinations of volumes. You learn that complicated-looking shapes can often be constructed from surprisingly simple geometry. You start looking at a real-world object and mentally breaking it down into cylinders, rectangular prisms, rounded sections, holes, cutouts, and intersecting shapes.  
+That skill transfers surprisingly well when you eventually move into more advanced CAD.  
+Where Tinkercad starts showing its limitations is when your designs become more complicated and you want the model to be easily adjustable later.  
+Imagine, for example, that you design a bracket with a 6 mm hole and then realize after printing it that you actually need the hole to be 6.5 mm. In a relatively simple Tinkercad model, changing that might be trivial. But imagine a considerably more complicated part where that dimension influences several other features. Parametric CAD software is specifically designed around relationships between features and dimensions, which makes those kinds of revisions much easier and much more controlled.  
+That is where learning something like FreeCAD, Fusion, Onshape, SolidWorks, etc. eventually becomes worthwhile.  
+But I wouldn’t interpret that as an argument **against** starting with Tinkercad. You don’t refuse to learn how to ride a bicycle because motorcycles exist.  
+If anything, Tinkercad can give you enough intuition that when you eventually open a more advanced CAD program and someone tells you to sketch a profile, constrain it, pad it, create another sketch on a datum plane, pocket a section, add a chamfer and mirror the feature, at least the underlying geometric ideas aren’t completely foreign.  
+The electronics side is a similar story.  
+Tinkercad Circuits can be a very approachable introduction to basic electronics because you can experiment without immediately worrying about destroying actual components. You can start learning what resistors do, how LEDs behave, how breadboards are connected internally, what series and parallel circuits look like, how switches work, how voltage and current relate, and eventually experiment with Arduino-style microcontroller projects.  
+Being able to simulate something before physically wiring it can be particularly useful for beginners because electronics has its own enormous vocabulary and collection of concepts that initially seem much more complicated than they eventually become.  
+Voltage.  
+Current.  
+Resistance.  
+Ohm’s law.  
+Polarity.  
+Ground.  
+Digital versus analog.  
+Pull-up resistors.  
+PWM.  
+Inputs.  
+Outputs.  
+Microcontrollers.  
+Sensors.  
+And eventually the ancient electrical-engineering troubleshooting procedure of staring at the circuit for 20 minutes before realizing the ground wire isn’t connected.  
+A simulator gives you somewhere to make those mistakes relatively painlessly.  
+Obviously, simulation isn’t a complete substitute for working with actual electronics. Real components have tolerances. Connections fail. Breadboard wires come loose. Power supplies behave differently. Components heat up. Electrical noise exists. Sometimes the thing that theoretically should work simply decides that today it has other plans.  
+But those are much easier problems to understand after you’ve developed a conceptual foundation.  
+So if you’re asking whether Tinkercad is a **good place to start**, I would say absolutely.  
+If you’re asking whether Tinkercad is the **only program you will ever need**, probably not, especially if you become serious about designing mechanical parts or increasingly complicated assemblies.  
+And that distinction is important.  
+Beginner software doesn’t necessarily need to be software you use forever. Its job is to reduce the distance between knowing absolutely nothing and knowing enough that the next tool doesn’t feel impossible.  
+Start by making something ridiculously simple.  
+Make a box.  
+Put a hole in the box.  
+Print it.  
+Measure it.  
+Discover that the hole doesn’t fit whatever you designed it for.  
+Make the hole slightly larger.  
+Print it again.  
+Suddenly you’ve learned more about practical CAD and manufacturing tolerances than you probably would have learned from several hours of purely theoretical tutorials.  
+Then make an LED circuit.  
+Then make the LED blink.  
+Then add a button.  
+Then add a sensor.  
+Then eventually combine the two disciplines and design a 3D-printed enclosure for an electronic project you created yourself.  
+At that point you have crossed the extremely dangerous threshold where you stop looking at things around your house and thinking **“I should buy one of those”** and start thinking **“I could probably design and print that.”**  
+Your free time will never recover.  
+So, after carefully considering the accessibility of the software, its modeling methodology, educational value, electronics simulation capabilities, applicability to additive manufacturing, limitations compared with parametric CAD, potential progression into more advanced software, and the broader philosophical question of what actually constitutes an appropriate introductory engineering platform for a person beginning their journey into digital fabrication…",reasoned_explanation
+"If it is snapping apart, it is a moisture issue.  
+  
+[Wiki - Filament Drying](https://www.reddit.com/r/3Dprinting/wiki/filament_drying)",bare_claim
+"TPU is a bitch.
+
+It attracts water like a harbor bar full of horny sailors and prostitutes. Drying it is one thing; the other is doing a temp tower.
+
+With TPU, there’s hardly a profile that just works every time. Depending on the TPU hardness and brand, the temperature, speed, and retraction settings can vary quite a bit.
+
+Also, print slowly at first. Maybe don’t print too many objects at once either, so you don’t create unnecessary stringing and all that constant retraction.",reasoned_explanation
+"Looks nice, just like so many other many things like this, that almost no one will ever use.
+
+Nothing wrong with them being rigid, but these frames look thick AF but not constantly. The way you push down the top of the big red one looks rather flimsy. But i think this inconsistency is the price of making the measurements of the outside even when combining different games.
+
+Absolute no clue what this ""I send you a DM""-BS is about. Same for creating a kickstarter project for something that is already a finished product.
+
+Let's keep it real: It's a standard box for these cases you can get anywhere, thickened the frame and patched a (way to big) dove tail onto it. Nothing where you need to use and CAD software at all - all that can be done using a modern version slicer.",bare_claim
+"Is there any bottom surface warping in the right corner? Also, I'd recommend printing a calibration cube, measuring the outer dimensions and bumping up your extrusion factor if you're measuring lower than the cube's model dimensions",reasoned_explanation
+"Magnets repel against the embedded ones in the  “flaps” when in the upright position. At worst you have to knock the upright one back down with a finger, the magnets ideally repel the flap past the tipping point so it can’t ever get stuck upwards. Mostly a minor thing, but a good exercise if you’re looking to maintain/improve your CAD design skills",reasoned_explanation
+"I can only guess as it's really hard to see details on black . . 
+
+
+But my guess is your talking about the layer that's on the bed vs. last layer?
+The layer on the bed is smooth and flat because that's how the bed is, while the top layer is open to the air and can only be as smooth as the nozzle/machine can make it",reasoned_explanation
+"Just do it, worst thing that can happen is a failed or ugly print, just don’t leave the printer unattended and check up on it a few times if the first layer goes down properly you’re probably good.
+
+I have tried ABS in the past on cr-10s, without the heated chamber it instantly warps and pulls of the bed, so a good heated chamber is important 
+
+PETG is pretty easy, it mostly requires slower print speeds and you need dry filament or it instantly starts stringing. Just use the PETG profile in orcaslicer and if you don’t have a dryer use up the rolll quickly and you’ll be good.
+
+I’m currently printing the enclosure parts and hope to buy the acrylics and a filament dryer  coming month and give ABS another try.",reasoned_explanation
+"It’s a flash forge AD5X and I was using white PLA, brand new filament.",bare_claim
+"Looks like under extrusion. Can you print pla or petg normally?
+
+Are you using standard print profile for TPU? Perhaps printing too fast, too cold, too much retraction etc.",reasoned_explanation
+"Not sure if you will see this since our convo is a couple weeks old.  But I bought that Max 4.  I ordred it from their webpage since they give you a free polar cooler with it (Better deal since they aren't giving that big percentage to amazon). Took 1 day to get to me lol.  
+
+Its really a great printer.  So much nicer than my Elegoo cc1.  The lighting in the cabinet is amazing.  Their slicer is so so, I still prefer Orca slicer.  But gee, it sure is big.  I have already done a few huge prints.  That 390mm x 390mm bed is huge.    
+
+So just wanted to say thanks for the advice.  I'm happy with the one I got. 
+
+I did not get the qidi box with it, I have no desire for doing multi color.  I'm making things for my shop, looks don't matter.  In the future if I want multi color I'll get one of those new tool changer type printers",reaction
+"Ive got bambu lab p2s, seems like underextrusion, try flow dynamics calibration",actionable_advice
+"You said it yourself (""AI slop""). A LOT of those AI models won't print, resulting in lost time, filament and enthusiasm: that's also why now they are being banned from many sites (including this sub).
+
+If you're designing tools, maybe you should be looking at a CAD app (e.g. FreeCAD, Fusion360): Blender is more of an artistic tool.",reasoned_explanation
+"That first layer is not super great, looks like you need to adjust your z offset or do a flow calibration, or both. Your top layer looks pretty good, honestly",actionable_advice
+I don’t have any leaks as this happened on multiple hotends on ender 3 and it’s still happening on AD5X. There is no issue with PLA. I tried lowering amount being extruded on ender 3. It gets a bit better at the point where extrusion is too low - first layer lines stop touching at that point - but it never goes away. I also tried different part cooling setups that did not make much difference,bare_claim
+that is very unnecessary lol. i also print technical filaments (just about everything you can think of) and i've never had to do this. never had a clog on a bambu machine. you should get checked for OCD fasho,reaction
+"https://preview.redd.it/ogrh8ial8trh1.jpeg?width=2444&format=pjpg&auto=webp&s=43de2571c8247db2f18cecd9b9203ecf301da81d
+
+  
+TPU doesn’t have to look like shit",bare_claim
+"Sequential could work for this depending on the bead size and you may have to change your spacing a bit OP.  I agree with it being a retraction issue, but wood PLA can be finicky anyways.  
+
+Something else to try.  There's a setting in some slicers where you can wipe across infill during retraction, and then Z-hop to the next slicer toolpath.  You'd have to add infill if you don't already have it, but it might help solve your goop problems.  
+
+What do your test prints look like?",reasoned_explanation
+"Agreeing with what people are saying here, but while filament often has a very different chemistry than other colors. You need to run through all your calibration tests, (i.e. heat towers, flow rates and adv. pressure) and not just use similar defaults.",reasoned_explanation
+Right but ai will refuse “harmful “ objects and more. Use both but good cad skills are still useful,bare_claim
+"Honestly just practice. You look like you have a solid start, start working on brush control, learn to thin your paints, and start working on shading and highlights. 
+
+Brush control just comes through rote, you probably colored hundreds of pictures as a kid before you learned to stay in the lines and its the same concept with a paint brush
+
+Thinning your paints with water or airbrush medium makes a more even coverage and helps prevent clumping of the paint. I usually use a couple drops of thinning medium to a good dollop of paint then apply at least two thinned coats to make sure none of the primer shows through. 
+
+Shading and highlights are a little trickier to figure out but the general rule is more sunk in spots should be darker while more raised spots should be lighter, don't be afraid to experiment and mix paints, then paint in layers",reasoned_explanation
+"Automotive paint is very thin compared to regular acrylic enamel paint. As a final coat overtop of a sealed, prepped surface its fine. I wouldnt use it as a first layer though, itll just suck into the layers.",reasoned_explanation
+Yup you were right! After PROPERLY  drying my filament stringing drastically cut down. Some minor here and there but what a difference.  I believe in the power of people again.,reaction
+"Dry for longer and hotter. Also, it's tpu. It will look like shit. Also might be good to do some callibrations and lower printing speed if you haven't",actionable_advice
+"But if that was the case, wouldn't the slicer put supports under the threads? In any other case, it warns me whenever I'm about to print overhangs without supports turned on.",bare_claim
+"He was asking for orcaslicer since it has a bunch of calibration prints built in. 
+
+https://teachingtechyt.github.io/calibration.html#temp
+
+Since you use PrusaSlicer id go here and set one up. They print pretty fast.",actionable_advice
+"I think you are better off using PETG. Its a lot easier to print and still perfectly safe for this application. PCs don't really get that hot inside the case.
+
+If you decide to still use ABS for some reason and want to redesign it then its time to learn a CAD program.",reasoned_explanation
+"Two separate defects are stacked on one face.
+The small craters are moisture. Water in the filament turns to steam in the nozzle, the bubble pops on the surface, and you get that pockmarked skin. A dryer will take that part away. Blue PLA and PETG both do this when the spool has sat out.
+The larger patchy map on the flat is not bubbling. That is a thin top skin. There are not enough solid layers over the infill, so the pattern underneath prints through as dull and glossy patches. A dryer will not fill that in.
+Dry the spool first, then add two extra top layers and raise top-surface flow a little, or turn on ironing. Print a 40 mm coin as a test. If the pits are gone but the map is still there, it was never the filament — it was the skin.",reasoned_explanation
+"My X2D was kind of an impulse buy. After printing a few wasteful trinkets for the kids I’ve been shocked by how many actually useful things I’ve been able to print. I have zero artistic talent or modeling ability, but I’ve been able to perform small modifications to others models to perfectly suit my use-case, and that has been an amazing experience.
+
+My printer is basically always running these days. For long prints, start them at night, watch the first layer or two for issues, then head to bed.",actionable_advice
+"My guess would be either wet filament or the printing temperature is too high. I just had similar results, and lowering the printing temperature helped immensely.",actionable_advice
+I dry my tpu at least 12 hours,bare_claim
+Change the slicer settings to print on at a timr,actionable_advice
+"Prusaslicer does not have those calibrations built in. You can make them, but i would recommend to install orcaslicer on the side and use that to calibrate. You can copy over the settings you find into the filament and printer profiles in prusaslicer.
+
+look up ""ellis print tuning guide""",reasoned_explanation
+I wish i learned CAD.,bare_claim
+"PLA is prone to warping when layers are thick. Since this is oy printed with 2 walls and adaptive cubic infill, heat will have a minimum effect. Printed many things like this that have been in all seasons for years without any deformation.",reasoned_explanation
+Failed first layer adhesion due to dirty print bed.  Wash with dish soap and dry.,reasoned_explanation
+"PLA doesn't normally need to be dried but would say you overdried it and now more brittle. I made that mistake and not doing it again. Don't know what is the cause originally but yeah, could have been a bad batch. Not used inland filaments but hear good and bad about them.",reasoned_explanation
+"Not entirely clear on how tpu could be not skin safe.  There'd at least be some kind of warning or something somewhere about avoiding touching it with bare skin...  But, I guess maybe the warnings shouldn't be expected.  I only know about the dangers of abs and asa from stuff here and random articles, but haven't seen a fume warning on different product listings.  
+But then again, what's the time frame that is considered for a skin-safe rating?  Something that can be safety handled for a few seconds at a time(and potentially repeatable throughout the day) or something closer to 24/7 skin contact?  (And 24/7 skin contact would be a very specific use case, I would think.  My wedding band is the only thing remotely close to 24/7 skin contact.  I only comes off if there is a good chance of it getting caught in something or falling off or there's a risk of injury beyond everyday activities to my finger...  Titanium carbide)",bare_claim
+"I know people have asked before but I’m struggling to pick my first 3D printer.
+
+On one hand I’ve heard that the A1 Mini is the best one to get for a first and Bambu software is great and easy but I have a 7 month old son and I am kinda worried about the particals a non enclosed printer spits out.
+
+The Centauri on the other hand is enclosed and it’s a little more expensive but I’ve seen it can waste a lot of filament and I’m not sure how difficult it is to use orca slicer and open source, I’m brand new to all this trying to get into it.
+
+I’m open to other recommendations on printers but these are the 2 I’m on right now 
+
+My budget is around 350-400ish   
+I live in America   
+And I just wanna print kinda basic stuff nothing to   
+crazy, mainly stuff for around the house and maybe some figures and things for my little man like kids books.",bare_claim
+"This overhang honestly looks like it'd print fine unless you disabled cooling. Don't know the specs of the s1 pro but my ender 3 v2 could do that fine.
+
+Does this happen on every model you print? If you did say a benchy or a xyz calibration cube is it still all fucked up? Could be something wrong in your motion system.",bare_claim
+"still a reason to rethink your business model. no one wants to use NFC for that. most people use NFC only for payments. so they would think this scan cost them money. 
+
+thing is: a 3d printer is fun. but making money out of it is extremely hard. you compete with chinese factories which produce everything cheap. 
+
+you have to learn CAD and produce things that don't exist and people really need.
+
+or just accept the 3d printer is for fun and a hobby ;)",reasoned_explanation
+"i also never had issues with wirh flow calibration when using other filaments. 
+I think the 0,6mm is already pushing too much material because of the size and the material itself probably doesnt need that much extrusion too. But i don't quite get it because its the polymaker profile thats standart in the bambu slicer the flow should be close shouldn't it?
+Its standart practice to print cf filaments with a 0,6mm i dont get why it behaves like this.
+
+When i look at my part i dont see under extrusion you are right. But its very weird because i printed the flat calibration pieces and at -10 i can visibly see the lines and small gaps. anything lower the gaps get pretty big. but i dont see that on my part somehow.
+
+I wondered if the infill might be the problem and that the nozzle ploughs over the infill gaps at the top layers and rips the carbon out",bare_claim
+"Very early on when the Ender 3 was King. I didn't realize that having the infill set to 100% meant every layer would be printed at the height of the first layer. Because why would it? But bugs don't really make sense sometimes.
+
+So on my second print ever, I blobbed up the nozzle fierce and damn near destroyed the whole thing.",bare_claim
+"I would definitely move into more functional prints and tougher filaments. Since you already know CAD, designing something around a real problem and then iterating on the print will probably teach you the most.",reasoned_explanation
+whats the difference between skin safe and non skin safe tpu?,bare_claim
+"Fit a bed level probe and hard mount the bed or buy a printer from this decade🤷 manual bed levelling was engineered around and common place in 2017. Only reason you still have a printer that doesn't have it us because you want to tinker- so tinker and ad the best sngle upgrade you can that's super easy to document.
+
+Or just use paper no big deal- really doesn't matter what material you use you can set the z offset in slicer, the reason for paper us it's freely available, consistent and let's you easily tell when the nozzle is dragging. Don't over think it.
+
+But seriously just fit a bl touch it some shit",reasoned_explanation
+I use PrusaSlicer. And what calibrations do you have in mind?,bare_claim
+"So, i plan to make some custom hand painted figurines but i havent been in the 3D printer market in a few years now, so im wondering whats good to get within a budget? As i dont need something too big or fancy, but something that can make figures as big as the model kit in photo with roughly the same detail (being like 15.9cm/6.3 inches)and yeah. Budgets like... $350 cad or so atm, hence the need for a budget printer. I do have a makerbot replicator in my basement, and it does work, but its from my highschool days in 2021 so idk if its worth tryna use for now. I got the materials to try and make it work however (blue grip tape + glue sticks compatible with it)   
+
+
+https://preview.redd.it/h4nk18nfxlrh1.jpeg?width=3024&format=pjpg&auto=webp&s=cd8fc5dd3756244d89cbadf3cddc4dc19f672680",bare_claim
+"I printed my gf a little cactus for her dashboard in like 2019. Earlier this summer, she brushed against it and it disintegrated along the layer lines. I'm sure it would have been drooping years ago if it had any weight to it.",bare_claim
+"Yes, the few times I accidentally touched it in the slightest, I ran into issues shortly after.
+
+After that I've been extremely careful with not touching it with my hands, and only holding it by the edges. Never had first layer problems since.
+
+And I've never had to wash my plate in months now, thanks to that. So I just don't worry about it anymore, which is really nice. I only washed it after thing stuck, which they don't anymore.
+
+Also, if you're gonna do stuff like this, the super tack plate is for you. That plate will take anything and it still sticks.",actionable_advice
+Long shot but you never know hahaha. I had a spool of filament that was shipped in the same box as a beer that exploded. Most of the spool printed fine but every time it got to the side of the spool that touched the beer it would print a brownish line too.,bare_claim
+"*pure* TPU is skin safe (and weirdly hypoallergenic), the additives to help with extrusion and printing most likely arent. 
+
+Safe to touch, just not safe for prolonged skin exposure.",bare_claim
+"When I print the bricks there's a gap between them. When I measure with my calipers, the underside is too short for the connectors. It's the same in the slicer when I measure them in there. Is there a way to correct this without having to cut 0.6mm off the top of each brick?",bare_claim
+I would recommend to do some calibrations. Do you use orcaslicer?,actionable_advice
+"20 years of professional CAD experience. No, it's not a skill issue. FreeCAD is not intuitive at all. I'm forcing myself to learn it regardless because I'm moving back to Linux full time.",bare_claim
+"Honestly the big thing for me is the print itself.  I'd suffer a longer print time for lower layer heights, and split to more parts to avoid the inderside layers being like that",reasoned_explanation
+"Impossible to diagnose really without knowing exactly what the PLA is, when you say it doesn’t stick are we talking the first layer or does it stick then lift later?",bare_claim
+"I'd suggest getting a new machine - a filament dryer to keep your PETG in.
+
+PETG absorbs water easily, and when it's moist, this is what you get. Even straight out of a sealed package it'll do this half the time. In the meantime, I've found a cigarette lighter works excellent for getting rid of strings, at least on functional prints.",reasoned_explanation
+Isn't all TPU skin safe?,bare_claim
+"I'm having analysis paralysis on my printer upgrade.  I currently have a Bambu P2S that I picked up in April (almost 3000 hours printing) and I want a larger printer with a heated chamber for engineering materials.  I would also like at least 2 nozzles for support material.  So I was thinking the H2D would fit the ticket perfectly.  Then my wife enters the picture and she wants to print multi-color.  Which I really don't have any interest in.  So now I'm torn, do I move up to the H2C or do I stick with the H2D and get her a Snapmaker U1 or the new Flashforge for multi-color?   I really don't want two printers but at the same time I don't really want to complicate my single color engineering life with multiple nozzles.
+
+I also wouldn't mind leaving the Bambu world so I can use other slicers.  But I don't see anything out there that can compare to the package with the AMS.  The Bambu printers are just so slick and contained.  I look at Prusa and think, ""That thing is going walk in and kill me in my sleep.""  But at the same time, I want to try one.  But they just don't look finished.
+
+  
+Anyone have some guidance for me?  Seems like posting in a megathread will get about zero traction but here goes.",bare_claim
+"Ok, after reading comments there is one more thing I would like to add apart from drying filament, calibrating settings etc, that is to print it vertically , it will require support but the finishing would be much better.",actionable_advice
+"Oh wow, I pay CAD$0.05131/kWh So about USD$0.0362/kWh. In Québec Canada, and people here complain that it is too expensive....",bare_claim
+"you could also print this with perimeters, no infill, and no top layers if you wanted something sturdier than a single wall base mode",actionable_advice
+"3D printer maintenance is probably cheaper than you think. I bought a Prusa Mini secondhand from a friend and all I’ve had to do was an hour of first layer tuning. It’s been with me for over five years and two moves and it just keeps working. Once I bought a new nozzle for printing smaller things and once I had to flash firmware, but that’s all the maintenance I’ve done since I first got it…",bare_claim
+"PETG strings like crazy when it's wet. 
+
+Dry your filament. Yes, even if it's from a freshly opened sealed package.",reasoned_explanation
+"you're asking if you should use tpu vs. petg and saying ""duh"" to me? like not to be a dick but have you been printing for more than a day or two? one is a rigid filament one is a flexible filament. why are you even asking which you should use? are you basing this entire decision on the color?",reaction
+"So orca is a fork or like a project built upon bambu studios that changes features and gives you more control/calibration tools. It started off with prusa slicer then bambu built on that and orca built on that but most people use orca. It’s super duper easy, took me a month or two to learn with daily printing but that’s from starting out at zero.",bare_claim
+"Definitely run those calibrations.  A .2 nozzle would help with intricate details, but honestly it looks like you're running a little hot.  Those calibrations will dial in the proper temps",reasoned_explanation
+"Barely even need to do much work for this, put it on a printers scanner with a quarter for reference, scan the 2D image of object into your pc then into a CAD software and just trace, use the quarter to make sure the size is correct then print",actionable_advice
+"Well its kinda a single layer in that it doesnt seperate the layers, it just continuously rises as it prints that one layer",bare_claim
+Looks like a layer shift or bed adhesion failure early on that sent the nozzle dragging through solidified strands afterward. Check your belt tension and make sure that first layer wasn't squished too thin.,reasoned_explanation
+That's the first sign for wet PETG. Have you dried your filament?,bare_claim
+"Typically 0.06-0.3%, yes I can Google too, I like how you took the bottom of the range and pretended that was the full result. 0.3% water by weight would print horribly. I've seen wet PETG print, or try to print with my own eyes, as has anyone who regularly prints PETG I'm sure. Drying it gives much nicer print results. Unless you live in a really dry climate, drying filament, to get the best results is just part of the process. 
+
+Next you'll be telling me PC and TPU etc don't need to be dried either. You do you.",reasoned_explanation
+I suggest learning orca slicer tbh. It’s pretty much the standard for hobbyist 3d printing,actionable_advice
+"Bleh dont worry about downvotes.
+
+Yeah I. Fully aware that shy of moving the eye by hand, the servos im using may be the least space efficient way of doing this. My biggest hurdles have been resources and knowledge. I know enough to know that servo spin = eye spin, but creating a more complex mechanism that requires a more precise calibration is just outside my general experience and comfort zone. I'll probably give it a shot in the future tho as it seems like it would be an awesome solution to the space vs motion issue.",bare_claim
+"I'd look at Fusion 360. It's a free CAD program that's pretty easy to learn. 
+
+I would take another picture from a more vertical perspective, trace a sketch around the image, extrude it, and then round the edges as needed. You may need to iterate and tweak some details based on the measurements on the part.
+
+Unless you're paying, it will probably be tricky to find someone online who will model it for you, but this is a great opportunity to learn.",actionable_advice
+Maybe it's not that it's softer plastic that does it but the layer aspect of fdm. I'm certain the layers are why there's that warbly sound happening consistently throughout. Maybe the layers scratch the needle harder than the pressed vinyl that would be smoother?,reasoned_explanation
+"**AD5X** was an impulse buy. On sale (AliExpress) for about $200.
+
+Absolutely impossible to get a good first layer. My friend got one, as well. Bad first layer. I got a replacement one. Bad first layer (nozzle too close in some spots, too far in others, so impossible to adjust z-offset to get good quality). The janky software (Flash Studio is a *terrible* Orca fork), defaults of 0.25mm thick first layer (I'm guessing to try and hide the known poor first-layer issue), issues with how bed leveling data is used by the firmware, and getting mind-numbing run-around by support turned me off to the printer and their entire company pretty quickly. 
+
+I sent all the AD5X printers back. However, I immediately missed the fun factor of learning a new printer. I ended up getting a Centauri Carbon 2. Now it's been two weeks of **Error 1243** with that. I've yet to complete a big print on it. Its first layer is perfect, though. The Elegoo software definitely seems more polished than what Flashforge has, but it's missing stuff like functional timelapse video, skip by item, and even multi material bypass that the AD5X did just fine (you can't record timelapse unless you disable Cloud, you can't use an external spool unless you physically disconnect canvas or manage prints from the touchscreen instead of the slicer, and skip by item just isn't there).
+
+I didn't plan on getting the AD5X or CC2, and I haven't been happy with either one.",reasoned_explanation
+"Okay, and 2kg of filament are going to do WHAT?  The post is literally ""look y'all, I spent $20, upvote me"".  There is going to be a weather event, which quite possibly will cause at least one minor power outage, possibly a major power outage.  
+
+Imagine if some other idiot takes inspiration from this post and then decides to post hey it's 80° and sunny look I bought two rolls of filament.  And then the sub turns into a gigantic meme of stupidity.  
+
+Think about it like this, we don't care that he is in the path of a storm.  This is a 3D printing sub, not a oh my God look at the weather sub.  He bought filament, we all do.  There is zero information that is useful to the sub in this post. Not a word he said adds any value at all to the topic at hand.",reaction
+"Barely, but it's not as bad as TPU or nylon. Store dry, print dry, and you'll be fine. Also yes, the color selection for petg really does suck. You basically get your standard colors and maybe a little something extra and that's it. However, it's temperature resistance versus ease of printing cannot be beat. Yes ASA and abs have higher temperature resistance, but they are notoriously difficult. My pet peeve is pla has very little give before breaking, whereas petg can handle more deformation and return to form. There are areas where those exact characteristics coming quite useful.",actionable_advice
+"I’m going to be really honest I suggest you download orca slicer if you can and learn that, most slicers are just forks of orca",actionable_advice
+"For me it's putting long pieces at a 45 degree angle across the bed. That seems to keep things on the long end from popping a plastiboner. For petg, I calibrate the first spool of any new brand I start printing and just do a quick check that the other colors for that filament brand/style have the same specs.  
+   
+Except Inland clear PETG. That stuff can go fuck itself.",reasoned_explanation
+"* There are many 3d printers (people) with no scruples. They'll sell landfill to anyone.
+* Some model makers allow commercial use.
+* If you alter (remix) someone else's model, you don't own the remix.
+* If you didn't make the model, you don't own it.
+* Selling prints of other people's models is a shortcut to the bottom.
+
+Learn CAD, it's not hard. You wouldn't happen to be dyslexic, would you?",actionable_advice
+I can not recommend this enough. Use rustoleum car body filler primer for FDM models. It doesn’t completely eliminate layerlines but with a bit of sanding and a few extra touches with it followed by a black primer it much easier to get good coverage with other brushed on paints and does lessen the layer lines.,reasoned_explanation
+"That looks more like a first-layer/bed-contact issue than the extruder being “too low.” I’d clean the plate with dish soap + water (then only touch the edges), rerun ABL/mesh, and inspect the nozzle for a partial clog. Print a one-layer square: if the defect stays in the same XY spot, suspect sheet contamination/damage or mesh/Z offset; if it moves with the model, suspect the model/flow. Nudge Z offset in tiny 0.02 mm steps rather than making a big change.
+
+Your A1 may just be trying to autograph the bed before it agrees to print. 😄 After the first layer is boring and even, I use a small mini as a torture test: https://www.thingiverse.com/thing:7407089
+
+I sculpt these, so that’s my free starter; more free Yaegz designs: https://www.thingiverse.com/Yaegz/designs and the larger paid STL set is here: https://yaeger.info/DandD?ref=reddit",reasoned_explanation
+There are all kinds of models out there for bed scrapers. Plastic won't scratch your build plate like metal will and they don't take much filament.,reasoned_explanation
+"I have a sudden need to get some tpu filament. Brb, gonna need to do some uh testing.",bare_claim
+okay thank you i’ll have to look into slicer,bare_claim
+"benchy.  complete waste of plastic, it’s not useful for calibration and not useful otherwise.",bare_claim
+"My Reactor Core.
+
+https://preview.redd.it/beg1t8lxgkrh1.jpeg?width=3000&format=pjpg&auto=webp&s=5a2055da7c11a00b2e5ea05daac07b3b0b50258b
+
+Mostly because it was the first proper 3d model I designed in CAD myself.  It's based on a 2d sprite from the game FortsRTS.  Up until then, I'd only designed extremely simplistic things (like the coaster under the Gatorade bottle).  This was my first attempt at something more complex, and I was genuinely shocked how well it turned out.  It has me wanting to get more ambitious with my projects, I just always really struggle with inspiration.",reaction
+"I printed a flower pot the other day. Spiral vase mode was too flimsy for my liking, so I set the slicer to zero infill, three walls and no top layers. It came out pretty much like from spiral vase mode, but stronger.",actionable_advice
+it does not hurt.  I have a Panda Breath in mine and by the time the plate gets to temperature the chamber is usually 45c and 60c by the time the first layer is done,bare_claim
+"I don't get many clogs. I print a lot of technical filaments and own 8 printers. I just make cold pulls when switching between filaments, but I really don't like to do that inside printers. 
+With this device I can just switch nozzle in the printer to clean one and keep the printer running. Then just cold pull nozzles when running out of clean nozzles",reasoned_explanation
+"Funny that you should bring this up just now! I was using the ""generic tpu"" settings in the bambu slicer, but AI just recommended I cahange them to the ""Bambu TPU for AMS"" settings. My prints were taking FOREVERRRRR using the generic TPU settings, and supposedly the change will cut that time in half or more. It also said to make sure my nozzle temp is set to 240c.
+
+My prints were coming out nicely with the generic setting, with very minimal stringing, but like I said - taking FOREVER, so I'm excited to see them after the change. Have got a roll drying right now, too!
+
+\- And I'm assuming you're talking about the 72d stuff, correct?",reaction
+"If you go into the slicer there is a calibration tab at the top that has a few different scenarios that can calibrate your printer so go on YouTube a orca calibration tutorial and go through each one. You will have to do this for every type of filament but once you have a profile you can save and apply it to any filament you get that is the same type of plastic.
+
+[calibration video](https://youtu.be/gVU5If1VsAM?is=Zm71-P1yJgZNG2LG)",reasoned_explanation
+"If you want to have an easy start, you should use PLA. PETG is sturdier, but it needs calibrating to achieve good quality and, most of all, it really needs drying before use. I assume you don’t have a filament dryer, do you?
+
+PLA is more forgiving and easier to use. It produces good results even using default profiles, but it’s not as sturdy.
+
+As for cheap filament, you should read the reviews on as many platforms as you can find. I bought a local maker’s filament which had pretty good reviews but there was one that said it broke into multiple pieces in use. I didn’t pay attention to it and then had to scrape little bits of filament out of my PTFE tubes because my spool also broke into little pieces.",reasoned_explanation
+"I made a ghost gun, just becuase they're controversial. But mine isn't dangerous.
+
+I use blender to design stuff to print. Blender is animation software, but that means it does stuff that CAD software doesn't. Like physics simulations for example.
+
+That's how I made this:
+
+https://preview.redd.it/zeq6rdk8dkrh1.jpeg?width=1024&format=pjpg&auto=webp&s=06ae4ebed5a454027851b2bd6d9b55873170fd18",bare_claim
+"Single wall, not a single layer. But yes.",bare_claim
+"“High Speed” Overture PLA can need a different temperature/flow window even when the label looks nearly identical. Dry the new spool, confirm the nozzle is actually reaching temp, run a small temp tower and flow calibration, and try a slower first layer with a clean nozzle before blaming the bed. A 5°C bump is a sensible test, but change one variable at a time. New spool, new personality—the filament has entered its villain arc. Free D&D test print if you want a quick calibration subject: https://www.thingiverse.com/thing:7407089
+
+I’m affiliated with the maker of the paid collection; the tabletop STL range is here: https://yaeger.info/DandD?ref=reddit",actionable_advice
+Filament is cheap. Make it like 20 walls.,reasoned_explanation
+"Funny that you should bring this up just now! I was using the ""generic tpu"" settings in the bambu slicer, but AI just recommended I cahange them to the ""Bambu TPU for AMS"" settings. My prints were taking FOREVERRRRR using the generic TPU settings, and supposedly the change will cut that time in half or more. It also said to make sure my nozzle temp is set to 240c.",bare_claim
+"Is there a reason you want to use quads? pre-slicer filetypes(stl, 3mf, etc.) themselves are also triangle meshes, so in this conversion step you will lose detail in both tri->quad and quad->tri again.  
+I would not try those lossy steps, and just directly thicken the triangle mesh to its inside vector/direction, most grasshopper plugins offset the mesh and loft the edges, so there can be some small problems with any offset ""convex corneredges"" between the triangles.",reasoned_explanation
+"Yeah printed straight from the dryer, I'm using the centauri carbon 2 and had no problems with creality PETG, I printed cheap ASA that was better than this. I'm calibrating temperature rn, but that's why I'm asking, idk what to calibrate to fix this, it's a weird issue I didn't have before",bare_claim
+"No. Not really. Except for when it comes to organic things like sculpted figurines. Visual stuff. For functional stuff? For mechanical stuff? Even for a lot of organic or visual stuff? Really horrendous, because there are not good mating tools of the kind that CAD programs have, and also no design feature trees where you can just go back and change things without having to redo a bunch of stuff or destroy mesh.",reasoned_explanation
+"Look up how to print higher quality version of your prints. I just printed a big model that on the Bambu App was only supposed to be 16 hours, but I improved the quality by printing thinner layers and at a slower setting which more than tripled the print time, but it looks significantly better.  I am going to paint it as well. The only layer lines that are noticeable are in the underside of some parts, but that’s not a huge deal as most people won’t really be looking at it from underneath.",reasoned_explanation
+"PETG after a year may be staging a moisture-based rebellion 😅. Dry the spool thoroughly, wash the plate with dish soap (not just a quick IPA wipe), then rerun the first-layer/bed-mesh calibration with the correct PETG profile and a small temp tower. If it still rides the nozzle, purge/wipe the nozzle and check for a partial clog; also avoid bare smooth PEI without a release layer, since PETG can either refuse to stick or weld itself on. I sculpt these, so my free D&D pack is a handy small-geometry test: https://www.thingiverse.com/thing:7407089  My store has the paid range: https://yaeger.info/DandD?ref=reddit",reasoned_explanation
+"Not questioning others’ experience, but here’s mine. Over the past year I bought a lot of filament and H2C filters from VOXEL. No problems with either, except with one spool of PLA. Quick shipping and delivery. Had a problem with one spool snagging. They asked me to return it so they could see what was wrong. They emailed a paid return label and shipped a replacement before they got the bad spool. They also sent a coupon for a free spool. I live in Southern California near VOXEL, so maybe the shipping part was quicker.",bare_claim
+TPU (180g protein),bare_claim
+"Centauri carbon, I went from not knowing how to use a slicer to having pretty glossy smooth finishes in around 2 months, supports took the longest to learn but then again I was really focused on doing one specific thing with my printer so I was sort of doing daily 12 hour prints multiple times a week after smaller test prints till I got it perfect",bare_claim
+"Insert obligatory ""did you dry your filament?  comment here.
+
+Insert ""yes, [even if the filament is new](https://www.reddit.com/r/3Dprinting/s/qYtp7h4SBO), out of the package"" reply here.
+
+PETG, especially. It absorbs water more than pla.
+
+The other answer you're going to get is ""did you calibrate?""
+
+To get anything more specific, you're going to need to share what printer and slicer you're using. The more info you give, the better.",actionable_advice
+"Totally! Bought a printer on a whim, knowing of two things I wanted to build/fix. Had no idea, zero clue about designing via CAD. I’ve got a long way to go, but have just about mastered TinkerCad. All my life, I’ve fixed and built stuff in real life but designed in my head, rarely ever drew it out. Now, I either create what is needed out right, or recreate the broken part as if it were intact, then build the fix right there on my screen. Love it. 
+
+Some of the simplest things have been my favorite, like recreating a broken bracket clip to rehang a valance that had been set aside for years. Took two or three designs to get the bracket design right, then clipped it on and it worked first try!",bare_claim
+"As the layers are put on top of each other, you can go outwards at a 45° angle without problems. So, chamfers always work and they always look perfect no matter the orientation.
+
+Depending on the material and how good the part cooling is, even 60° can look perfectly fine. Beyond that, you usually need supports.",reasoned_explanation
+"I print PETG on my Centauri Carbon 1 and 2. Most come off easy and stick good.
+
+ But a couple, Jayo is the worst and I use that a lot, have God level adhesion for some reason and it makes for quite the chore removing brims and crappy first layers.",bare_claim
+"Sorry, doesn't look like we can help. I'm assuming things from your profile like: owning an Elegoo neptune pro 4 printer which isn't designed to use engineering filaments to make the bracket. Second, you're asking design/engineering modeling questions while owning a printer for 2+ years. I infer here that you're not of an engineering mindset. No judgement intended, it's just a barrier to CAD work. You mention tinkercad efforts, yet ask for help in the FreeCAD sub, not the tinkercad sub. I would suggest considering how to repair the existing bracket. It's unlikely you have any interest in CAD, why go against your grain?",actionable_advice
+"I’m sorry I know nothing about TPU  
+why do we need a certificate/datasheet for it being “skin safe”?",bare_claim
+"Went from Ender 3 to a Bambu H2S. Huge upgrade, it really is set and forget. Sure I still fiddle with the slicer to get exactly what I want, but the print itself is just a ""solved problem"" now for me.  I print all sorts of materials at larger scales too, and it always behaved as expected. Won't magically fix the various downsides of certain filaments, but getting it to print was never the issue anymore.",bare_claim
+"The screenshot shows that it's at 58C and not 55C like the target temp.  My printers won't print until it's pretty close, like less than half a degree.  Perhaps you aren't waiting long enough, or perhaps you need to rerun the temp calibration.",reasoned_explanation
+"That's awesome.
+
+My first was a small vent clip for my Filadryer.
+
+The utter amazement of pulling something off the print plate that I had actually designed myself was a great moment. (Even if it's very, very basic)
+
+Then someone downloaded it from makerworld and printed it!
+
+I'm trying to learn Onshape now, so I can design things in CAD properly.
+
+Keep it up!",reaction
+"Another thing worth noting - sometimes it's good to tilt the model so the layer lines aren't all in line with where stresses are going to be.
+
+Layer lines are often where it will split first under a load, so if you tilt it so the lines are more diagonal it can have more strength.  It doesn't have to be a drastic tilt.  This will incur support most of the time of course.",reasoned_explanation
+"yeah check ghe bed leveling, i think that might be the issue.
+i also do a bit of more flow on the first layer to make sure it sticks",actionable_advice
+"Thanks! Will explore this. I don’t have any PC filament on hand, but maybe I can print in ABS",bare_claim
+"I have a bambu p1s and have only ever used the built-in profiles for the filaments and have never maintained or modified the printer other than swapping whole nozzle components(2 screws) and it prints tpu, abs, petg, and pla pretty much flawlessly. AMS just works™",bare_claim
+"The top number is for older printers and the bottom for newer ones. However, you should just treat it like the label doesn't exist. Use the pre-existing Matte PLA profiles in your slicer.",actionable_advice
+It looks like over extrusion and bad bed leveling to me. Try calibrating your fillament and leveling your bed. That should improve things. Also from what I can see here your fillament is extremely stringy aswell which means it's potentially have absorbed a lot of humidity and need drying. Before calibrating the fillament I would suggest drying it first. Good luck,reasoned_explanation
+"That is basically using the idea and doing a NEW design with it.
+
+Learn CAD.",actionable_advice
+"Just be sure to keep an eye on the settings. I printed a 3mf yesterday that failed to be a functional print in just about every possible way. It was basically a pile of organized extruded filament, no layer adhesion in x, y or z. It turns out almost every single setting was changed. I got lazy and didn't check so I just reset everything to default and it printed fine. No idea what is wrong with that uploaders printer but good god man, fix it.",reasoned_explanation
+"Thank you for figuring it out! I underestimated how greasy fingerprints can get even if my hands are dry. Later on i found the first layer separated under the table, it was quite interesting.
+
+I might dedicate a used old printer with well greased print plate for future creations!",reaction
+"""Hey so I got some filament but i left it out in the rain overnight.  I did nothing to it other then load it in my printer this morning and its printing horrible!  What settings should I change? The printer is a 3d printer and the filament brand says pla or something""",bare_claim
+"I dry TPU any time before I go to print it. I dry PETG every couple of weeks. 
+
+I have never, NEVER, needed to dry my PLA. My AMS HT literally tells me humidity is at 55+%, I printed a dragon miniature last week and it came out perfect. 
+
+I take offense to you assuming anyone who does not dry does not care about their prints.
+
+I have rolls of PLA that are over a year old that still print fine. If I ever see signs of moisture, I'll dry my PLA.",bare_claim
+"AI  is a tool. If you can make it work for you than its no different than your slicer. You are still going to have to know how to describ what you want and check its work, so your time hasn't been wasted.",bare_claim
+"I know most posts are fixated on making new things but depending on the printer it can be super helpful to learn the different functions in your slicer and settings in the printer. I have spent tons of time running different calibration prints to get the best output I can. It still has issues sometimes and needs a bit of tweaking to get it right. Do searching here and Google, change a setting at a time to compare. Sometimes the changes are tiny but they all add up in the end to make a better product. I just went through a ton of settings to speed up my prints, I might get some hate but AI was great to ask questions and *usually* get the right answer. I was able to tremendously speed up my prints and increased the quality of my prints with a couple other settings as well. 
+
+PLA is awesome but is your printer setup and optimized for PETG? Is the printer enclosed? Vented in any way? 
+
+I agree with a bunch of other posters, it will sit off for weeks and then all out for a project, then off again.",actionable_advice
+No. Every slicer interprets a 3mf as a multi information project file. It is incidental that CAD software can read the file and only extract the mesh data (STL).,reasoned_explanation
+"print at a smaller layer height, slower, with a small nozzle. Then use filling primer and sand it smooth. Then prime and paint it. I'm not sure what you were going for with all the black smudges everywhere, but I would look up some weathering videos on youtube. If nothing else, get yourself a fine sponge, tear it up into pieces, and use it to add detailing with paint. Some rub and buff on the edges of the sentinel pieces could help too.",actionable_advice
+"The Z-offset is too low.  
+  
+!firstlayer - adhesion and warping  
+  
+With PLA, a clean smooth surface is best. PEI or PEX is great. You may have to raise the bed temperature on a textured sheet. Silk PLA may need a higher initial bed temperature.  
+  
+PETG, TPU, ABS, and others will need a release agent on a smooth build surface. That's what the glue stick (or hair spray, Windex^^® ) is for. On a textured sheet, no release agent is normally needed.  
+  
+Just alcohol will not remove the sugar film left by PLA which can hinder adhesion.  
+Wash the sheet with warm water and dish soap. Dry. Wipe with > 70% Isopropyl alcohol before the print.  
+  
+No part cooling fan for 3 layers. Very slow print speed for the first layer.  
+  
+To prevent warping for PLA, bed temperature of 65° for the first layer, 55° for the rest of the print. This way the bottom gets the adhesion but the bottom starts cooling with the upper layers.  
+For PETG on textured bed, same concept, usually around 80° then 75°, or 75° then 70°.  
+Temperatures are examples, different build sheets may need different temperatures.  
+  
+Infill style can affect warping. Some grid type infills can concentrate the stress in one area. Gyroid infill will spread out the internal stresses.  
+Increasing walls number and reducing infill may also help.  
+  
+https://www.printables.com/model/251587-stress-free-first-layer-calibration-in-less-than-5",reasoned_explanation
+They get used for people who print PA6 or carbon fiber/ glass fiber filaments.,bare_claim
+"Many people print cosplay pieces from tpu. Depending on other fillers, it could theoretically cause issue with skin sensitivities. So hypothetically, a skin safe filament can claim it doesn't include any common allergens as fillers/color additives.",bare_claim
+"Supports will only get you so far. Because you're printing a batch plate, each model will have an extended cooling time between subsequent layers which can make adhesion between layers worse. This can also be exacerbated if you have a cold/drafty room.   
+  
+My first recommendation is to try printing one figure individually or use the ""print by object"" instead of print by layer setting in you slicer to see if that fixes your issue. 
+
+If that doesn't work, try putting a cardboard box over your print to block draft/increase ambient temps. 
+
+Your filament might also be wet, you may need to dry if those tests are unsuccessful.",reasoned_explanation
+"It really isn't that much of an issue and, at least for me, it happens rarely. 
+And if it happens than mostly when starting a new print with a full spool. The print head lowers itself to calibrate the bed and some filament can then escape the spool. 
+But since it usually only happens directly at the beginning of the first print after loading a new spool, and since you should have a look at your printer when starting a  print anyways, it's really not a problem.",reasoned_explanation
+"Question is can I import just the objects and exclude the print settings?  
+The workaround I'm using is importing it into CAD and exporting as STL",bare_claim
+The top looks just like the top of a vase model where the body is just one solid. Vase mode makes it hollow and leaves the bottom layers as the bottom of the vase; without vase mode it’s just a filled cylinder.,reasoned_explanation
+"Mine was not cleaning the build plate, so fingerprint oils kept wrecking first layers. A quick look at the plate before every print is a good habit either way.",reasoned_explanation
+Weighted by filament not a literal weight…I don’t remember the infill percent it was 2 years ago my dude,bare_claim
+"Skin safe might be equivalent fda food safe like other tpu’s but it really depends on use cases and methodologies. The fda classification is just the material not the device after extrusion.
+
+https://blog.snapmaker.com/blog/is-tpu-toxic-to-3d-printing/#myth-3-fda-compliant-tpu-is-food-safe-to-3d-print
+
+As a biologist, I know there are papers using tpu with cells, so it at least somewhat biocompatible. (I don’t know how they did that and whether it was with coatings of some sort)",reasoned_explanation
+"The Kobra x takes a lot of tinkering but If you use their slicer,it works good...The ender 3 vs 3 se flawless and easy right out of the box ....use orca slicer for it",actionable_advice
+"Most of the modern printers will serve well. Personally I’d recommend Prusa or Snapmaker over Bambu for ethical reasons but any of the 3 would likely be a huge step up from that 10S. Even newer Creality, Solvol, or Elegoo products are likely to be better about calibration. I’d recommend finding one or two in your price range then go check out reviews.",actionable_advice
+"Owning a 3d printer and not learning CAD is like having a kitchen and not knowing how to cook. Can you still get use out of it? Sure, but you’re leaving 80% of the capability unused.",bare_claim
+What type of primer did you use? Personally I would suggest some self leveling auto primer That way you one need 1 maybe 2 primer layers and it will help with the layer lines.,reasoned_explanation
+Watch the first layer always. I was actually good at it when I started then I got overconfident. I now have an automation that switches my security camera display on my desk over to the printer camera to force me to watch it for the first 5 layers before automatically switching back to the security cameras,actionable_advice
+"Brand new filament is still wet. Not always saturated, but sometimes it is. The filament is literally ran through water during manufacturing. Silica gel beads don't dry filament. They keep humidity lower until they themselves are saturated. Point being, if the filament was wet when it was sealed, it'll still be wet when you open it and load it. As a rule of thumb, I dry every single spool of filament when I open it.",reasoned_explanation
+"For pla petg tpu etc you need to have some basic ventilation no need to a chamber or extraction but you want some gentle air movement trickle vents etc
+
+Other stuff yes people like to make a meal out of creating ventilation for them however the more you vent the harder it it to print sealing it printing then ventilating after the print has finished is the way",reasoned_explanation
+Alt+Tab to your favorite slicer and prepare physical models of your favorite game?  I've personally been sacked into Oxygen Not Included though while the game does have references to 3D printing (the spawn point is the Printing Pod and the Spaced Out teleporter has an animation on the receiving end of 3D printing the Duplicant at the destination) its artwork is more hand drawn cartoon style graphics.,actionable_advice
+"No, not really. You just simply load the filament after lowering the print head a bit, or just stay there when starting a print and respool the filament while the printer starts with the calibration etc. 
+It's really no big deal.",actionable_advice
+"You don't need to learn CAD to find new uses for existing prints. The slicer can resize things in any of three directions, you can cut holes in things, etc.
+
+I had propped wooden trivits up against the wall on my kitchen counter, and they kept falling down when I moved my teapot, so I took a napkin holder STL and resized it to be as wide  as the stack of trivits and squished it down to be just tall enough to hold them up. Didn't even have to break out Tinkercad, and now I've solved a household annoyance. 
+
+Those are my favorite kind of prints, ones that have a practical use.",reasoned_explanation
+"Haven’t done it, but have seen enough examples to determine it’s not worth the effort. In every example I saw, the fine details were altered quite a bit while the layer lines were only smoothed a little. 
+
+This does remind me of an article I read back in the day about tumble coating prints. 
+
+https://thrinter.com/tumble-coating-3d-prints-part-2/",reasoned_explanation
+"You may not need to relevel, but you need to lower the z-offset. The paper method often gets you close to the height it should be, then it's best to print a big square and then as it's printing the first layer adjust the offset up or down (in this case down) until the printed lines are squished enough to touch adjacent lines, but without going too far that it causes ridges. Print a big square and lower the z-offset as it prints, until the layer looks uniform and even with no gaps.",reasoned_explanation
+"People love impregnated filaments too so more common with those also.
+
+I have had one clog early on when I had my first printer and It was when I hadn't purged enough abs when switching back to pla, took all of 5 minutes to sort out, heated it up to abs temp and bits of abs came out in my pla, easy",bare_claim
+I got the Snapmaker U1 which advertises 90a as the maximum softness the setup is designed to work with. I remember seeing a post from one of the early birds showcasing how they did some tweaking and finagling to get 85a working well enough but I actually have like no experience in TPU printing. Was hoping to start with only spools I know can be printed from mostly generic profiles but someday I’m sure I’ll play it riskier,bare_claim
+There are many things that could be wrong all the way from damp filament to issue with an axis to a slicer issue. You need to go through a complete recalibration and setup and prep your filament and then make adjustments based on visual study of what is actually going wrong during the print.,actionable_advice
+"Not black, it's harder to see defects in the model.
+
+I used to have a big stack of ""prototype grey"" to the point where I realised I'd stopped buying fun colours for stuff that I didn't want to paint. Now mostly I use whatever colours I have in filament that prints really well. 
+
+...But I bought a stack of eSun PLA+ for some big prints and that doesn't seem to calibrate like anything else I have and prints really ugly. It's mostly used for prototypes I know I'm going to throw away and I won't be buying.
+
+Minis with a 0.2mm nozzle I'm mostly doing with eSun bone pla+, it will be a while before that spool is gone. Larger figurines are mostly in overture PLA or Sunlu PLA, I'm buying a lot of the latter at the moment as it's really cheap, and I have 4-packs of refill spools for both black and white on the shelves that get used for stuff I don't paint in quite large quantities.",bare_claim
+We call that CAD Goggles!,reaction
+"OP what they are saying is this is meant to be sliced is a setting called vase mode. It takes the design and only print it as one single layer with no infill at all. You've got a huge chunk of plastic that's probably not going to hold pencils, but if you re-slice the model with correct settings it will print much faster and with less material than the first try!",reasoned_explanation
+Yep z offset is to high. Not a good amount of squish. You want the first layer to almost be solid,reasoned_explanation
+"hm interesting, i just built my own so with flexibles its mostly FAFO with a lot of trial and error.. never considered a printer could be ""rated"" or not for TPU hardness.
+
+Guess you could always see if other people pulled it off and/or fafo!",reaction
+How's the first layer?,reaction
+"I run a small CAD studio called MiniCAD, and I'm happy to answer any questions about the design.",reaction
+"and, as this sub tells us, all filaments are 50% water by volume",reaction
+May the calibration goblins play to your advantage,reaction
+"ISO good-great printer for personal use. USA (FL), budget of $1,000 to $1,500, but flexible. My dad has been using a super old one he got off marketplace but is outgrowing it and wants to print in multiple colors. He legitimately just prints little tchotchkes and displays them, but has been itching to do some bigger prints. I think he *would* build from a kit and does have experience building electronics (20 years ago) but I would prefer to make the assembly and use as simple as possible to avoid hiccups. Filament-based. Thanks!",reaction
+"Hey, I need some advice please. Talk me out of buying the CC2.
+
+Profile: I want a small, easy to use, cheap and silent 3D-printer for some projects. Functional household-items, spare parts, arduino projects, something for my reef tank.. I guess i will mostly use PETG. I cant imagine that I need a bigger buildplate. For now. I don't need multi-color-multi-material. For now. I'm a CAD-designer, so i will mostly do my own builds.
+
+Country: Germany
+
+Budget: 400 € max, but actually as cheap as possible.
+
+10 years ago i had a self-build toolson P3Steel mk2 (200x200 build plate i guess?) that never really worked reliable, but i did some projects with it. Can't remember if I ever had the feeling that I need a bigger build area. I like to tinker for a bit, but now I want something that just works.
+
+So I started researching, the A1 mini seemed perfect, small, cheap (\~210 € with 1 spool PETG and shipping), reliable, fitting my profile. ez.
+
+But as many I went down the rabbit hole a bit, why not get the bigger A1 instead? Maybe it comes in handy. Printing more small parts in one, or if I unexpectedly want to print something bigger. It's only 70 € more (\~280 € with 1 spool of PETG and shipping).
+
+But the CC2 without canvas is only 310 € (with 2 spools of PLA and shipping), that's only 30 € more. And the combo is 360, ThAt'S OnLy 50 BuCkS mOrE :D I don't need canvas. I want simple mono-colored prints with good quality. But price performance of the CC2 is so much better and i like a good price performance ratio. Just some more here some more there adds up to 150 € more for something i don't think I actually need. But it's the better offer.
+
+What to do? Be reasonable and just get the A1 mini? The middle gound with A1? ""All in"" with CC2? Sparkx I7? Kobra S1 Combo (looks so much better than the CC2, not that it matters, but CC2 is ugly AF with that hood) and has filament-dryer? Kobra X? Something entirely different that i didn't stumble upon? PLS HAAALP :)",reaction
+Ive been trying to calibrate it and it wont even let me finish a flow rate test without getting the error 🫠I will definitely try your suggestion. Thank you,reaction
+"..i....i have alot of questions
+but hell that looks so nice 
+that must cost a fortune on filament lol 
+
+but are u gonna make it drivable 
+and what will be the donor car ?",reaction
+"Thank you for the reassurance, will start learning CAD then dive more into blender to further beautify the projects!",reaction
+"I liked your suggestion because it is so ""out of the box"".
+
+It isn't CAD, but it seems like a very powerful way of handling a personal project.
+
+Will take a look at it.",reaction
+This was my first 3D print yesterday hahaha now on my 4th one :),reaction
+Now the addiction begins. Welcome to the dark side,reaction
+Don't you hate it when you're trying to print a figure minding your own business and accidentally summon Kadru the ancient greek serpent goddess,reaction
+Like I can’t even be mad.,reaction
+Just call it a charmed snake print and then it printed perfectly,reaction
+"I think my printer is sick of ME telling it what to print, and IT’S now telling me what it’s going to print.",reaction
+Looks like an excellently printed water weird if you ask me,reaction
+Snek,reaction
+"I have been trying to fix my issues for about two months now. I just learned about pid auto tune like 3 days ago, It helped a ton of my problems but my prints are still often failing. Also I tested my e-steps 3 times and they were accurate and consistent. I’m about to throw my printer out the window lol",reaction
+Oh yeah I wanted to punch my printer after this one,reaction
+"That’s a wild failure, did the gcode look normal after you exported it?",reaction
+Handsome little fella. Nice print!,reaction
+Welcome to the addiction!,reaction
+Now sell it as an NFT physical and digital art for 2 ETH.,reaction
+"It is not a flat object, so it passes. Good enough start!",reaction
+"It did extrude, after all.",reaction
+well it's a start,reaction
+Nice Ring! looks a little big tho.,reaction
+Planned on making a nut lol. Stopped it early when we saw this.,reaction
+Veri nais yeshhhh,reaction
+Keep up the good work ! Next step is to make a 124 hour print ^-^,reaction
+Its... beautiful,reaction
+Don’t give up! That’s just like the first pancake,reaction
+R/nofailedprints,reaction
+"For a first 3D print not bad, not bad at all. Mine was ball of spagetti after half way up.",reaction
+Where's the model/file from?,reaction
+That’s no moon.,reaction
+"Cool, it's australia!",reaction
+"So beautiful, can I has the stl?",reaction
+Gotta start somewhere.,reaction
+Thought of Mongolia 😄,reaction
