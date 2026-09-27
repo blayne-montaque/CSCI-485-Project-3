@@ -138,3 +138,81 @@ Before implementing any stretch feature, this file will receive a dated or clear
 ## Integrity commitments
 
 All claims in the project will be based on observed work. The project will not fabricate Reddit comments, student review, annotation decisions, API calls or results, training, metrics, confusion matrices, wrong predictions, confidence scores, demo completion, Git state, or another human annotator.
+
+## Post-core-experiment stretch plan — 2026-09-27
+
+This section is a post-experiment addition. The original specification above,
+taxonomy, labels, split and success criteria remain unchanged. Core results are
+frozen at `a55b3ec73bb33b22314c82f8ebf7aa220c977d30`. Read-only diagnostics found
+38/43 fine-tuned predictions were reasoned_explanation, 5 were bare_claim, and
+29 were wrong. The baseline and fine-tuned accuracies were 28/43 and 14/43.
+Training and validation losses decreased over three epochs, but these observations
+do not establish the cause of poor generalization. No retraining, test-driven
+tuning, or replacement of the recorded experiment is planned.
+
+### Confidence calibration analysis
+
+Use the saved 43 fine-tuned test probability vectors, without new test inference
+or fitting a calibration transformation. Confidence is the maximum of the four
+probabilities. Use 10 equal-width bins: [0,.1), [.1,.2), ..., [.9,1], including 1
+in the final bin. Report sample count, mean confidence, accuracy and signed gap
+per bin; empty bins have null means/accuracy and zero contribution to ECE.
+ECE is sum over bins of (bin count / 43) times the absolute accuracy-confidence
+gap. Also report the multiclass Brier score as the mean per-example sum of four
+squared probability-minus-one-hot errors (not divided by four). Save JSON and
+a reliability plot showing the identity line and counts. Distinguish observed
+over/underconfidence from proof of calibration; 43 cases and sparse bins limit
+precision. Validate probability sums, bin endpoints, empty bins, known synthetic
+metric cases, and reproduction from saved predictions.
+
+### Systematic error analysis
+
+Use saved baseline/fine-tuned predictions and errors joined by comment_id to
+unchanged finalized text/provenance. Quantify prediction and confusion-pair
+frequencies, errors by true/predicted class, paired correctness, disagreements,
+and the IDs each model alone gets right. Measure whitespace-delimited word and
+character lengths by class and correctness, plus confidence summaries and the
+five highest-confidence errors. Include descriptive lexical/structural checks:
+printing vocabulary (print*, filament*, nozzle*, layer*, bed, slicer*, PETG, PLA,
+TPU, support*), question marks, newlines, and short comments (at most 20 words).
+These are exploratory diagnostics, not a fitted explanation or significance test.
+
+Analyze at least three real mistakes illustrating advice, unsupported assertion,
+and social reaction: candidates pbz923l, pc1nuul and gyxhfex, all verified against
+saved errors. Preserve exact text, source URL, true/predicted labels, confidence,
+and all probabilities. Separate measured facts from plausible interpretations;
+small training size, imbalance, vocabulary overlap and semantic boundaries are
+limitations/hypotheses unless evidence establishes more. Record decreasing loss
+without calling it sufficient learning. Save reproducible JSON/CSV and validate
+joins, totals, exact examples, error membership, and agreement counts. AI-assisted
+interpretations will be checked against the saved text and taxonomy; do not imply
+independent student discovery or unperformed human verification.
+
+### Local classification interface
+
+Implement a separate classifier_app.py, preserving the annotation app.py.
+Load the existing checkpoint/tokenizer from checkpoints/takemeter-distilbert,
+with the recorded label mapping and maximum length 256. Accept arbitrary text;
+classify only after a button press; display the label, raw confidence and all four
+probabilities. Identify the model as experimental fine-tuned DistilBERT and show
+the observed poor test performance. Use CUDA when available and CPU otherwise.
+No Groq call or key is needed. Handle empty input, missing/corrupt checkpoints,
+and long-text truncation clearly. Explain checkpoint reproduction if missing.
+This is local deployment, not a hosted service or completed demo recording.
+
+Validate the classifier with actual local inference on newly supplied smoke-test
+text (not another test-set evaluation), probability/mapping checks, CPU inference,
+and Streamlit interaction tests for submission, empty input and missing model.
+Retain observed smoke-test evidence. No calibration transform is applied.
+
+### Delivery and validation order
+
+Commit and push this planning-only update as Checkpoint A before creating any
+stretch scripts/artifacts. After remote verification, implement the three planned
+features, write an evidence-grounded README, audit the supplied project rubric,
+run tests and read-only core-artifact validation, then commit/push Checkpoint B.
+Core artifact hashes and split IDs must remain unchanged. Validators may be
+extended to recognize this append-only plan while preserving the original plan
+snapshot used by the core experiment. Inter-annotator reliability is excluded:
+there is no real second independent human annotator. The student must still
+record the 3–5 minute demo; no recording or demo URL will be fabricated.
