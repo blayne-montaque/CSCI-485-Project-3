@@ -56,7 +56,14 @@ with st.sidebar:
         st.write(f"{label}: {int((accepted['final_label'] == label).sum())} / {TARGET_PER_LABEL}")
     st.divider()
     filter_status = st.selectbox("Show", ("Unreviewed", "All", "Reviewed", "Accepted", "Excluded", "Ambiguous"))
+    proposed_label_filter = st.selectbox(
+        "AI proposed label filter", ("All proposed labels",) + VALID_LABELS
+    )
     label_filter = st.selectbox("Final label filter", ("All labels",) + VALID_LABELS)
+    st.caption("Unreviewed AI proposed labels")
+    unreviewed = frame.loc[~frame["human_reviewed"]]
+    for label in VALID_LABELS:
+        st.write(f"{label}: {int((unreviewed['proposed_label'] == label).sum())}")
 
 visible = frame.copy()
 if filter_status == "Unreviewed":
@@ -69,6 +76,8 @@ elif filter_status == "Excluded":
     visible = visible.loc[visible["excluded"]]
 elif filter_status == "Ambiguous":
     visible = visible.loc[visible["ambiguous"] | visible["ai_ambiguous"]]
+if proposed_label_filter != "All proposed labels":
+    visible = visible.loc[visible["proposed_label"] == proposed_label_filter]
 if label_filter != "All labels":
     visible = visible.loc[visible["final_label"] == label_filter]
 
