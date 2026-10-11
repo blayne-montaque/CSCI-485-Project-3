@@ -206,5 +206,5 @@ Limits include a small 43-comment test set, non-random human acceptance and targ
 The main takeaway is that a sound evaluation workflow can reveal an unsuccessful classifier. Meaningful support versus an action or assertion is a subtle target; optimizing a small model for three epochs did not demonstrate that distinction here. The stronger baseline still struggled at the planned reasoning/advice boundary. These findings support honest reporting and better future study design, not a claim that a particular training change would fix the model.
 
 ## Demo status
-
-**Demo video: To be recorded after final repository audit.** The remaining student deliverable is a **3–5 minute recording**: introduce the taxonomy and real dataset; show the locked split and transparent baseline substitution; compare the poor fine-tuned result; walk through one real error and the reliability plot; demonstrate local classification and its uncertainty; close with limitations and reflection. No video link exists yet.
+Link:
+https://howardu-my.sharepoint.com/:v:/g/personal/blayne_montaque_bison_howard_edu/IQD8ws3Gmw29RaKPuvEtrmf1AUYoAE7WHpMDvPyQp9RJV-Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=zQWtbf

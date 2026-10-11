@@ -43,3 +43,6 @@ Desktop.ini
 ~$*
 
 # Keep data/, artifacts/, CSVs, evaluation JSON, and PNG figures trackable.
+
+# Local demo recording; README links to the hosted video.
+/MEEG 485 Project 3.mp4
